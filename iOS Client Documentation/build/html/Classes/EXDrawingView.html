@@ -49,7 +49,31 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
+	<option value="//api/name/clearDrawing">&nbsp;&nbsp;&nbsp;&nbsp;- clearDrawing</option>
+	
+	<option value="//api/name/drawBitmap">&nbsp;&nbsp;&nbsp;&nbsp;- drawBitmap</option>
+	
+	<option value="//api/name/drawRect:">&nbsp;&nbsp;&nbsp;&nbsp;- drawRect:</option>
+	
+	<option value="//api/name/drawingSetup">&nbsp;&nbsp;&nbsp;&nbsp;- drawingSetup</option>
+	
+	<option value="//api/name/initWithCoder:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithCoder:</option>
+	
+	<option value="//api/name/initWithFrame:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithFrame:</option>
+	
+	<option value="//api/name/lineWidth">&nbsp;&nbsp;&nbsp;&nbsp;- lineWidth</option>
+	
+	<option value="//api/name/path">&nbsp;&nbsp;&nbsp;&nbsp;- path</option>
+	
 	<option value="//api/name/redrawFromPaths:">&nbsp;&nbsp;&nbsp;&nbsp;- redrawFromPaths:</option>
+	
+	<option value="//api/name/touchesBegan:withEvent:">&nbsp;&nbsp;&nbsp;&nbsp;- touchesBegan:withEvent:</option>
+	
+	<option value="//api/name/touchesCancelled:withEvent:">&nbsp;&nbsp;&nbsp;&nbsp;- touchesCancelled:withEvent:</option>
+	
+	<option value="//api/name/touchesEnded:withEvent:">&nbsp;&nbsp;&nbsp;&nbsp;- touchesEnded:withEvent:</option>
+	
+	<option value="//api/name/touchesMoved:withEvent:">&nbsp;&nbsp;&nbsp;&nbsp;- touchesMoved:withEvent:</option>
 	
 	
 	
@@ -85,7 +109,31 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/clearDrawing">clearDrawing</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/drawBitmap">drawBitmap</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/drawRect:">drawRect:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/drawingSetup">drawingSetup</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithCoder:">initWithCoder:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithFrame:">initWithFrame:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lineWidth">lineWidth</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/path">path</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/redrawFromPaths:">redrawFromPaths:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/touchesBegan:withEvent:">touchesBegan:withEvent:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/touchesCancelled:withEvent:">touchesCancelled:withEvent:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/touchesEnded:withEvent:">touchesEnded:withEvent:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/touchesMoved:withEvent:">touchesMoved:withEvent:</a></span></li>
 	
 </ul></li>
 
@@ -138,7 +186,7 @@ which responds to an event fired off at the end of every draw moment.</p>
 						
 						
 						
-						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
 
 						<ul class="task-list">
 							<li>
@@ -152,6 +200,103 @@ which responds to an event fired off at the end of every draw moment.</p>
 	<span class="tooltip">
 		<code><a href="#//api/name/redrawFromPaths:">&ndash;&nbsp;redrawFromPaths:</a></code>
 		<span class="tooltip"><p>Redraw the view from the given paths.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithCoder:">&ndash;&nbsp;initWithCoder:</a></code>
+		<span class="tooltip"><p>Overwritten initializer, calls <a href="#//api/name/drawingSetup">drawingSetup</a> after initting the super.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithFrame:">&ndash;&nbsp;initWithFrame:</a></code>
+		<span class="tooltip"><p>Overwritten initializer, calls <a href="#//api/name/drawingSetup">drawingSetup</a> after initting the super.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/path">&ndash;&nbsp;path</a></code>
+		<span class="tooltip"><p>Lazy instantiation of the path.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/clearDrawing">&ndash;&nbsp;clearDrawing</a></code>
+		<span class="tooltip"><p>Clear context and put the background image back in.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/drawingSetup">&ndash;&nbsp;drawingSetup</a></code>
+		<span class="tooltip"><p>Some common setup actions. Setting the primary state of the view, including
+its style, touch capability, background color, initializing some member variables.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/lineWidth">&ndash;&nbsp;lineWidth</a></code>
+		<span class="tooltip"><p>Retrieve the line width from NSUserDefaults.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/touchesBegan:withEvent:">&ndash;&nbsp;touchesBegan:withEvent:</a></code>
+		<span class="tooltip"><p>Touch-responding method. Fired off when the first touch of a given
+stroke happens. Set counter to zero, get the first touch (and location),
+Add that position to our pts array.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/touchesMoved:withEvent:">&ndash;&nbsp;touchesMoved:withEvent:</a></code>
+		<span class="tooltip"><p>Responds to the movement of a touch. Adds the touch point to the array,
+and if the array is big enough, approximates a curve for those points.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/touchesEnded:withEvent:">&ndash;&nbsp;touchesEnded:withEvent:</a></code>
+		<span class="tooltip"><p>Responds to the end of a touch and handles drawing appropriately.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/touchesCancelled:withEvent:">&ndash;&nbsp;touchesCancelled:withEvent:</a></code>
+		<span class="tooltip"><p>Responds to the cancellation of a touch. Essentially forwards to touchesEnded.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/drawRect:">&ndash;&nbsp;drawRect:</a></code>
+		<span class="tooltip"><p>Override of UIView&rsquo;s main drawRect method.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/drawBitmap">&ndash;&nbsp;drawBitmap</a></code>
+		<span class="tooltip"><p>Draw cached image with most recent <a href="#//api/name/path">path</a> over the top, then
+add that <a href="#//api/name/path">path</a> to the cached image.</p></span>
 	</span>
 	
 	
@@ -220,6 +365,383 @@ which responds to an event fired off at the end of every draw moment.</p>
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
+	<a name="//api/name/clearDrawing" title="clearDrawing"></a>
+	<h3 class="subsubtitle method-title">clearDrawing</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Clear context and put the background image back in.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)clearDrawing</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Clear context and put the background image back in.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EXDrawingView.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/drawBitmap" title="drawBitmap"></a>
+	<h3 class="subsubtitle method-title">drawBitmap</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Draw cached image with most recent <a href="#//api/name/path">path</a> over the top, then
+add that <a href="#//api/name/path">path</a> to the cached image.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)drawBitmap</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Draw cached image with most recent <a href="#//api/name/path">path</a> over the top, then
+add that <a href="#//api/name/path">path</a> to the cached image.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EXDrawingView.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/drawRect:" title="drawRect:"></a>
+	<h3 class="subsubtitle method-title">drawRect:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Override of UIView&rsquo;s main drawRect method.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)drawRect:(CGRect)<em>rect</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>rect</em></dt>
+			<dd><p>The rectangle in which to draw.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Override of UIView&rsquo;s main drawRect method.</p>
+
+<p>Set line width given our object&rsquo;s current line width,
+draw the cached image, stroke our <a href="#//api/name/path">path</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EXDrawingView.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/drawingSetup" title="drawingSetup"></a>
+	<h3 class="subsubtitle method-title">drawingSetup</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Some common setup actions. Setting the primary state of the view, including
+its style, touch capability, background color, initializing some member variables.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)drawingSetup</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Some common setup actions. Setting the primary state of the view, including
+its style, touch capability, background color, initializing some member variables.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EXDrawingView.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithCoder:" title="initWithCoder:"></a>
+	<h3 class="subsubtitle method-title">initWithCoder:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Overwritten initializer, calls <a href="#//api/name/drawingSetup">drawingSetup</a> after initting the super.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithCoder:(NSCoder *)<em>aDecoder</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>aDecoder</em></dt>
+			<dd><p>A decoder to initialize with. Honestly don&rsquo;t know what it means.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>id  A pointer to the new EXDrawingInterpretationView object.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Overwritten initializer, calls <a href="#//api/name/drawingSetup">drawingSetup</a> after initting the super.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EXDrawingView.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithFrame:" title="initWithFrame:"></a>
+	<h3 class="subsubtitle method-title">initWithFrame:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Overwritten initializer, calls <a href="#//api/name/drawingSetup">drawingSetup</a> after initting the super.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithFrame:(CGRect)<em>frame</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>frame</em></dt>
+			<dd><p>The CGRect representing the frame of this view.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>id  A pointer to the new EXDrawingInterpretationView object.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Overwritten initializer, calls <a href="#//api/name/drawingSetup">drawingSetup</a> after initting the super.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EXDrawingView.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/lineWidth" title="lineWidth"></a>
+	<h3 class="subsubtitle method-title">lineWidth</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieve the line width from NSUserDefaults.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (float)lineWidth</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Retrieve the line width from NSUserDefaults.</p>
+
+<p>Here in case we want to ever scale stroke width by device/resolution.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EXDrawingView.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/path" title="path"></a>
+	<h3 class="subsubtitle method-title">path</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Lazy instantiation of the path.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (UIBezierPath *)path</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Lazy instantiation of the path.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EXDrawingView.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/redrawFromPaths:" title="redrawFromPaths:"></a>
 	<h3 class="subsubtitle method-title">redrawFromPaths:</h3>
 	
@@ -240,7 +762,7 @@ which responds to an event fired off at the end of every draw moment.</p>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>paths</em></dt>
-			<dd><p>an array of UIBezerPath objects</p></dd>
+			<dd><p>An array of UIBezerPath objects to redraw.</p></dd>
 		</dl>
 		
 	</div>
@@ -273,6 +795,248 @@ one that was used recently so as to avoid any change in frame.</p>
 	
 </div>
 						
+						<div class="section-method">
+	<a name="//api/name/touchesBegan:withEvent:" title="touchesBegan:withEvent:"></a>
+	<h3 class="subsubtitle method-title">touchesBegan:withEvent:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Touch-responding method. Fired off when the first touch of a given
+stroke happens. Set counter to zero, get the first touch (and location),
+Add that position to our pts array.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)touchesBegan:(NSSet *)<em>touches</em> withEvent:(UIEvent *)<em>event</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>touches</em></dt>
+			<dd><p>The set of touches returned by this event.
+(One, since multi-touch is disabled.)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>event</em></dt>
+			<dd><p>The event attached to these touches. Not so
+important to us here.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Touch-responding method. Fired off when the first touch of a given
+stroke happens. Set counter to zero, get the first touch (and location),
+Add that position to our pts array.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EXDrawingView.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/touchesCancelled:withEvent:" title="touchesCancelled:withEvent:"></a>
+	<h3 class="subsubtitle method-title">touchesCancelled:withEvent:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Responds to the cancellation of a touch. Essentially forwards to touchesEnded.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)touchesCancelled:(NSSet *)<em>touches</em> withEvent:(UIEvent *)<em>event</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>touches</em></dt>
+			<dd><p>The set of touches returned by this event.
+(Onen since multi-touch is disabled.)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>event</em></dt>
+			<dd><p>The event attached to these touches. Not so
+important to us.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Responds to the cancellation of a touch. Essentially forwards to touchesEnded.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EXDrawingView.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/touchesEnded:withEvent:" title="touchesEnded:withEvent:"></a>
+	<h3 class="subsubtitle method-title">touchesEnded:withEvent:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Responds to the end of a touch and handles drawing appropriately.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)touchesEnded:(NSSet *)<em>touches</em> withEvent:(UIEvent *)<em>event</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>touches</em></dt>
+			<dd><p>The set of touches returned by this event.
+(One, since multi-touch is disabled.)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>event</em></dt>
+			<dd><p>The event attached to these touches. Not so
+important to us.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Responds to the end of a touch and handles drawing appropriately.</p>
+
+<p>Detects whether or not we were a &ldquo;small enough&rdquo;
+touch to be a &ldquo;point&rdquo;. If so, set the point drawing flag to YES. Also,
+clear <a href="#//api/name/path">path</a> and reset counter for curve approximation.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EXDrawingView.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/touchesMoved:withEvent:" title="touchesMoved:withEvent:"></a>
+	<h3 class="subsubtitle method-title">touchesMoved:withEvent:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Responds to the movement of a touch. Adds the touch point to the array,
+and if the array is big enough, approximates a curve for those points.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)touchesMoved:(NSSet *)<em>touches</em> withEvent:(UIEvent *)<em>event</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>touches</em></dt>
+			<dd><p>The set of touches returned by this event.
+(One, since multi-touch is disabled.)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>event</em></dt>
+			<dd><p>The event attached to these touches. Not so
+important to us here.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Responds to the movement of a touch. Adds the touch point to the array,
+and if the array is big enough, approximates a curve for those points.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EXDrawingView.m</code><br />
+	</div>				
+	
+	
+</div>
+						
 					</div>
 					
 					
@@ -286,7 +1050,7 @@ one that was used recently so as to avoid any change in frame.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Josef Lange &amp; Daniel Guilak. All rights reserved. (Last updated: 2013-03-13)</span><br />
+						<p><span class="copyright">&copy; 2013 Josef Lange &amp; Daniel Guilak. All rights reserved. (Last updated: 2013-03-15)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
 						
