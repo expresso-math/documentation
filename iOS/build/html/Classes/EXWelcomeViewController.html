@@ -63,6 +63,8 @@
 	
 	<option value="//api/name/receiveSession:">&nbsp;&nbsp;&nbsp;&nbsp;- receiveSession:</option>
 	
+	<option value="//api/name/segueToTraining:">&nbsp;&nbsp;&nbsp;&nbsp;- segueToTraining:</option>
+	
 	<option value="//api/name/sessionFailed:">&nbsp;&nbsp;&nbsp;&nbsp;- sessionFailed:</option>
 	
 	<option value="//api/name/shouldAutorotateToInterfaceOrientation:">&nbsp;&nbsp;&nbsp;&nbsp;- shouldAutorotateToInterfaceOrientation:</option>
@@ -116,6 +118,8 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/prepareForSegue:sender:">prepareForSegue:sender:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/receiveSession:">receiveSession:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/segueToTraining:">segueToTraining:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sessionFailed:">sessionFailed:</a></span></li>
 	
@@ -203,8 +207,15 @@ Gets <a href="#//api/name/session">session</a>. Voila.</p>
 	
 </li><li>
 	<span class="tooltip">
+		<code><a href="#//api/name/segueToTraining:">&ndash;&nbsp;segueToTraining:</a></code>
+		<span class="tooltip"><p>The sending object.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
 		<code><a href="#//api/name/receiveSession:">&ndash;&nbsp;receiveSession:</a></code>
-		<span class="tooltip"><p>The ASIHTTPRequest from <a href="../Classes/EXSession.html">EXSession</a> completed, let&rsquo;s do something
+		<span class="tooltip"><p>The <a href="../Classes/ASIHTTPRequest.html">ASIHTTPRequest</a> from <a href="../Classes/EXSession.html">EXSession</a> completed, let&rsquo;s do something
 with its data (like fill in <a href="../Classes/EXSession.html">EXSession</a> and move on!)</p></span>
 	</span>
 	
@@ -212,7 +223,7 @@ with its data (like fill in <a href="../Classes/EXSession.html">EXSession</a> an
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/sessionFailed:">&ndash;&nbsp;sessionFailed:</a></code>
-		<span class="tooltip"><p>The ASIHTTPRequest from <a href="../Classes/EXSession.html">EXSession</a> failed, let&rsquo;s do something
+		<span class="tooltip"><p>The <a href="../Classes/ASIHTTPRequest.html">ASIHTTPRequest</a> from <a href="../Classes/EXSession.html">EXSession</a> failed, let&rsquo;s do something
 about it!</p></span>
 	</span>
 	
@@ -644,7 +655,7 @@ about it!</p></span>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The ASIHTTPRequest from <a href="../Classes/EXSession.html">EXSession</a> completed, let&rsquo;s do something
+		<p>The <a href="../Classes/ASIHTTPRequest.html">ASIHTTPRequest</a> from <a href="../Classes/EXSession.html">EXSession</a> completed, let&rsquo;s do something
 with its data (like fill in <a href="../Classes/EXSession.html">EXSession</a> and move on!)</p>
 	</div>		
 	
@@ -672,9 +683,55 @@ with its data (like fill in <a href="../Classes/EXSession.html">EXSession</a> an
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>The ASIHTTPRequest from <a href="../Classes/EXSession.html">EXSession</a> completed, let&rsquo;s do something
+		<p>The <a href="../Classes/ASIHTTPRequest.html">ASIHTTPRequest</a> from <a href="../Classes/EXSession.html">EXSession</a> completed, let&rsquo;s do something
 with its data (like fill in <a href="../Classes/EXSession.html">EXSession</a> and move on!)</p>
 	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EXWelcomeViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/segueToTraining:" title="segueToTraining:"></a>
+	<h3 class="subsubtitle method-title">segueToTraining:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The sending object.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)segueToTraining:(id)<em>sender</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sender</em></dt>
+			<dd><p>The sending object.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -697,7 +754,7 @@ with its data (like fill in <a href="../Classes/EXSession.html">EXSession</a> an
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The ASIHTTPRequest from <a href="../Classes/EXSession.html">EXSession</a> failed, let&rsquo;s do something
+		<p>The <a href="../Classes/ASIHTTPRequest.html">ASIHTTPRequest</a> from <a href="../Classes/EXSession.html">EXSession</a> failed, let&rsquo;s do something
 about it!</p>
 	</div>		
 	
@@ -725,7 +782,7 @@ about it!</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>The ASIHTTPRequest from <a href="../Classes/EXSession.html">EXSession</a> failed, let&rsquo;s do something
+		<p>The <a href="../Classes/ASIHTTPRequest.html">ASIHTTPRequest</a> from <a href="../Classes/EXSession.html">EXSession</a> failed, let&rsquo;s do something
 about it!</p>
 	</div>
 	
@@ -853,7 +910,7 @@ about it!</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Josef Lange &amp; Daniel Guilak. All rights reserved. (Last updated: 2013-03-16)</span><br />
+						<p><span class="copyright">&copy; 2013 Josef Lange &amp; Daniel Guilak. All rights reserved. (Last updated: 2013-03-19)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
 						

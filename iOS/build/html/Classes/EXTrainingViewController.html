@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>EXDrawingViewController Class Reference</title>
+		<title>EXTrainingViewController Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
@@ -17,7 +17,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">EXDrawingViewController Class Reference</h1>
+				<h1 class="hideInXcode">EXTrainingViewController Class Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -52,11 +52,9 @@
 	
 	<option value="//api/name/redoButton">&nbsp;&nbsp;&nbsp;&nbsp;redoButton</option>
 	
-	<option value="//api/name/session">&nbsp;&nbsp;&nbsp;&nbsp;session</option>
-	
-	<option value="//api/name/sessionLabel">&nbsp;&nbsp;&nbsp;&nbsp;sessionLabel</option>
-	
 	<option value="//api/name/settingsButton">&nbsp;&nbsp;&nbsp;&nbsp;settingsButton</option>
+	
+	<option value="//api/name/symbol">&nbsp;&nbsp;&nbsp;&nbsp;symbol</option>
 	
 	<option value="//api/name/undoButton">&nbsp;&nbsp;&nbsp;&nbsp;undoButton</option>
 	
@@ -69,35 +67,29 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/alertView:didDismissWithButtonIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- alertView:didDismissWithButtonIndex:</option>
-	
 	<option value="//api/name/clearDrawing:">&nbsp;&nbsp;&nbsp;&nbsp;- clearDrawing:</option>
-	
-	<option value="//api/name/didReceiveMemoryWarning">&nbsp;&nbsp;&nbsp;&nbsp;- didReceiveMemoryWarning</option>
 	
 	<option value="//api/name/drawingDidEnd:">&nbsp;&nbsp;&nbsp;&nbsp;- drawingDidEnd:</option>
 	
-	<option value="//api/name/initWithNibName:bundle:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithNibName:bundle:</option>
+	<option value="//api/name/getNewSymbol">&nbsp;&nbsp;&nbsp;&nbsp;- getNewSymbol</option>
 	
-	<option value="//api/name/newExpressionFailed:">&nbsp;&nbsp;&nbsp;&nbsp;- newExpressionFailed:</option>
+	<option value="//api/name/imageUploaded:">&nbsp;&nbsp;&nbsp;&nbsp;- imageUploaded:</option>
 	
 	<option value="//api/name/popoverControllerDidDismissPopover:">&nbsp;&nbsp;&nbsp;&nbsp;- popoverControllerDidDismissPopover:</option>
-	
-	<option value="//api/name/receiveNewExpression:">&nbsp;&nbsp;&nbsp;&nbsp;- receiveNewExpression:</option>
-	
-	<option value="//api/name/receiveSymbols:">&nbsp;&nbsp;&nbsp;&nbsp;- receiveSymbols:</option>
-	
-	<option value="//api/name/recognizeDrawing:">&nbsp;&nbsp;&nbsp;&nbsp;- recognizeDrawing:</option>
 	
 	<option value="//api/name/redo:">&nbsp;&nbsp;&nbsp;&nbsp;- redo:</option>
 	
 	<option value="//api/name/removeMostRecentDraw">&nbsp;&nbsp;&nbsp;&nbsp;- removeMostRecentDraw</option>
 	
+	<option value="//api/name/sendTrainingSet:">&nbsp;&nbsp;&nbsp;&nbsp;- sendTrainingSet:</option>
+	
+	<option value="//api/name/setProgress:">&nbsp;&nbsp;&nbsp;&nbsp;- setProgress:</option>
+	
 	<option value="//api/name/shouldAutorotateToInterfaceOrientation:">&nbsp;&nbsp;&nbsp;&nbsp;- shouldAutorotateToInterfaceOrientation:</option>
 	
 	<option value="//api/name/showSettings:">&nbsp;&nbsp;&nbsp;&nbsp;- showSettings:</option>
 	
-	<option value="//api/name/symbolsFailed:">&nbsp;&nbsp;&nbsp;&nbsp;- symbolsFailed:</option>
+	<option value="//api/name/startOver">&nbsp;&nbsp;&nbsp;&nbsp;- startOver</option>
 	
 	<option value="//api/name/undo:">&nbsp;&nbsp;&nbsp;&nbsp;- undo:</option>
 	
@@ -147,11 +139,9 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/redoButton">redoButton</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/session">session</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sessionLabel">sessionLabel</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/settingsButton">settingsButton</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/symbol">symbol</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/undoButton">undoButton</a></span></li>
 	
@@ -165,35 +155,29 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/alertView:didDismissWithButtonIndex:">alertView:didDismissWithButtonIndex:</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/clearDrawing:">clearDrawing:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didReceiveMemoryWarning">didReceiveMemoryWarning</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/drawingDidEnd:">drawingDidEnd:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithNibName:bundle:">initWithNibName:bundle:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getNewSymbol">getNewSymbol</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/newExpressionFailed:">newExpressionFailed:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/imageUploaded:">imageUploaded:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/popoverControllerDidDismissPopover:">popoverControllerDidDismissPopover:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/receiveNewExpression:">receiveNewExpression:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/receiveSymbols:">receiveSymbols:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/recognizeDrawing:">recognizeDrawing:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/redo:">redo:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeMostRecentDraw">removeMostRecentDraw</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sendTrainingSet:">sendTrainingSet:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setProgress:">setProgress:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shouldAutorotateToInterfaceOrientation:">shouldAutorotateToInterfaceOrientation:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/showSettings:">showSettings:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/symbolsFailed:">symbolsFailed:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startOver">startOver</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/undo:">undo:</a></span></li>
 	
@@ -212,7 +196,7 @@
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="EXDrawingViewController Class Reference" name="top"></a>
+				<a title="EXTrainingViewController Class Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -221,7 +205,7 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">EXDrawingViewController Class Reference</h1>
+						<h1 class="title title-header">EXTrainingViewController Class Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
@@ -235,7 +219,7 @@
 	<td class="specification-value"><a href="../Protocols/EXDrawingViewDelegate.html">EXDrawingViewDelegate</a><br />UIAlertViewDelegate<br />UIPopoverControllerDelegate</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">EXDrawingViewController.h<br />EXDrawingViewController.m</td>
+	<td class="specification-value">EXTrainingViewController.h<br />EXTrainingViewController.m</td>
 </tr>
 						</tbody></table></div>
 					
@@ -245,8 +229,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>The view controller for the drawing view. Manages the drawing undo stack, as well as
-the settings popover and uploading of the drawing to Barista.</p>
+						<p>The view controller used for training.</p>
 					</div>
 					
 					
@@ -266,13 +249,6 @@ the settings popover and uploading of the drawing to Barista.</p>
 	<span class="tooltip">
 		<code><a href="#//api/name/popCon">&nbsp;&nbsp;popCon</a></code>
 		<span class="tooltip"><p>The popover controller for settings display on iPad.</p></span>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/session">&nbsp;&nbsp;session</a></code>
-		<span class="tooltip"><p>The current <a href="../Classes/EXSession.html">EXSession</a> with Barista.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
@@ -308,13 +284,6 @@ the settings popover and uploading of the drawing to Barista.</p>
 	<span class="tooltip">
 		<code><a href="#//api/name/redoButton">&nbsp;&nbsp;redoButton</a></code>
 		<span class="tooltip"><p>The redo button.</p></span>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/sessionLabel">&nbsp;&nbsp;sessionLabel</a></code>
-		<span class="tooltip"><p>The UILabel object to show our session_identifier.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
@@ -356,41 +325,31 @@ redraws from paths, and resets the <a href="#//api/name/undoManager">undoManager
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/recognizeDrawing:">&ndash;&nbsp;recognizeDrawing:</a></code>
+		<code><a href="#//api/name/sendTrainingSet:">&ndash;&nbsp;sendTrainingSet:</a></code>
 		<span class="tooltip"><p>Start the recognition process. Really issues command to create a new
-expression on Barista&rsquo;s end, then calls <a href="#//api/name/receiveNewExpression:">receiveNewExpression:</a></p></span>
+expression on Barista&rsquo;s end, then calls receiveNewExpression:</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/receiveNewExpression:">&ndash;&nbsp;receiveNewExpression:</a></code>
-		<span class="tooltip"><p>Receive the request once it&rsquo;s successfully been made. Extract the expression
-from the response, and start the image upload.</p></span>
+		<code><a href="#//api/name/imageUploaded:">&ndash;&nbsp;imageUploaded:</a></code>
+		<span class="tooltip"><p>Delegate method fired off when the image has been successfully uploaded
+to Barista.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/newExpressionFailed:">&ndash;&nbsp;newExpressionFailed:</a></code>
-		<span class="tooltip"><p>Expression request has failed. Handle its failure (notify user, halt current
-process of upload, etc.</p></span>
+		<code><a href="#//api/name/setProgress:">&ndash;&nbsp;setProgress:</a></code>
+		<span class="tooltip"><p>Protocol for intercepting HUD setProgress.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/receiveSymbols:">&ndash;&nbsp;receiveSymbols:</a></code>
-		<span class="tooltip"><p>Receive the request for symbols once it&rsquo;s successfully been made. Extract the symbols
-from the response and move forward to show them.</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/symbolsFailed:">&ndash;&nbsp;symbolsFailed:</a></code>
-		<span class="tooltip"><p>Symbol request has failed. Handle its failure (notify user, halt current
-process of moving forward, etc.</p></span>
+		<code><a href="#//api/name/startOver">&ndash;&nbsp;startOver</a></code>
+		<span class="tooltip"><p>Start a new training event.</p></span>
 	</span>
 	
 	
@@ -411,13 +370,6 @@ process of moving forward, etc.</p></span>
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/initWithNibName:bundle:">&ndash;&nbsp;initWithNibName:bundle:</a></code>
-		<span class="tooltip"><p>Stub for overriding.</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
 		<code><a href="#//api/name/viewDidLoad">&ndash;&nbsp;viewDidLoad</a></code>
 		<span class="tooltip"><p>Setup for when the view loads.</p></span>
 	</span>
@@ -425,8 +377,8 @@ process of moving forward, etc.</p></span>
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/didReceiveMemoryWarning">&ndash;&nbsp;didReceiveMemoryWarning</a></code>
-		<span class="tooltip"><p>Stub for overriding.</p></span>
+		<code><a href="#//api/name/getNewSymbol">&ndash;&nbsp;getNewSymbol</a></code>
+		<span class="tooltip"><p>Get a new <a href="#//api/name/symbol">symbol</a> from the API for training.</p></span>
 	</span>
 	
 	
@@ -473,13 +425,6 @@ in the <a href="../Classes/EXDrawing.html">EXDrawing</a> object and register und
 	</span>
 	
 	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/alertView:didDismissWithButtonIndex:">&ndash;&nbsp;alertView:didDismissWithButtonIndex:</a></code>
-		<span class="tooltip"><p>Respond to UIAlertView that gets called up in the event of any network errors.</p></span>
-	</span>
-	
-	
 </li>
 						</ul>
 						
@@ -499,6 +444,13 @@ in the <a href="../Classes/EXDrawing.html">EXDrawing</a> object and register und
 	<span class="tooltip">
 		<code><a href="#//api/name/hud">&nbsp;&nbsp;hud</a></code>
 		<span class="tooltip"><p>The progress HUD that displays when necessary.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/symbol">&nbsp;&nbsp;symbol</a></code>
+		<span class="tooltip"><p>The symbol we&rsquo;re training on currently.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
@@ -550,7 +502,7 @@ in the <a href="../Classes/EXDrawing.html">EXDrawing</a> object and register und
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">EXDrawingViewController.m</code><br />
+		<code class="declared-in-ref">EXTrainingViewController.m</code><br />
 	</div>				
 	
 	
@@ -591,7 +543,7 @@ in the <a href="../Classes/EXDrawing.html">EXDrawing</a> object and register und
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">EXDrawingViewController.h</code><br />
+		<code class="declared-in-ref">EXTrainingViewController.h</code><br />
 	</div>				
 	
 	
@@ -632,7 +584,7 @@ in the <a href="../Classes/EXDrawing.html">EXDrawing</a> object and register und
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">EXDrawingViewController.m</code><br />
+		<code class="declared-in-ref">EXTrainingViewController.m</code><br />
 	</div>				
 	
 	
@@ -673,7 +625,7 @@ in the <a href="../Classes/EXDrawing.html">EXDrawing</a> object and register und
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">EXDrawingViewController.h</code><br />
+		<code class="declared-in-ref">EXTrainingViewController.h</code><br />
 	</div>				
 	
 	
@@ -714,7 +666,7 @@ in the <a href="../Classes/EXDrawing.html">EXDrawing</a> object and register und
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">EXDrawingViewController.h</code><br />
+		<code class="declared-in-ref">EXTrainingViewController.h</code><br />
 	</div>				
 	
 	
@@ -755,89 +707,7 @@ in the <a href="../Classes/EXDrawing.html">EXDrawing</a> object and register und
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">EXDrawingViewController.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/session" title="session"></a>
-	<h3 class="subsubtitle method-title">session</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>The current <a href="../Classes/EXSession.html">EXSession</a> with Barista.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) EXSession *session</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>The current <a href="../Classes/EXSession.html">EXSession</a> with Barista.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">EXDrawingViewController.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/sessionLabel" title="sessionLabel"></a>
-	<h3 class="subsubtitle method-title">sessionLabel</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>The UILabel object to show our session_identifier.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UILabel *sessionLabel</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>The UILabel object to show our session_identifier.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">EXDrawingViewController.h</code><br />
+		<code class="declared-in-ref">EXTrainingViewController.h</code><br />
 	</div>				
 	
 	
@@ -878,7 +748,48 @@ in the <a href="../Classes/EXDrawing.html">EXDrawing</a> object and register und
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">EXDrawingViewController.h</code><br />
+		<code class="declared-in-ref">EXTrainingViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/symbol" title="symbol"></a>
+	<h3 class="subsubtitle method-title">symbol</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The symbol we&rsquo;re training on currently.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) NSString *symbol</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The symbol we&rsquo;re training on currently.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EXTrainingViewController.m</code><br />
 	</div>				
 	
 	
@@ -919,7 +830,7 @@ in the <a href="../Classes/EXDrawing.html">EXDrawing</a> object and register und
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">EXDrawingViewController.h</code><br />
+		<code class="declared-in-ref">EXTrainingViewController.h</code><br />
 	</div>				
 	
 	
@@ -960,7 +871,7 @@ in the <a href="../Classes/EXDrawing.html">EXDrawing</a> object and register und
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">EXDrawingViewController.h</code><br />
+		<code class="declared-in-ref">EXTrainingViewController.h</code><br />
 	</div>				
 	
 	
@@ -975,62 +886,6 @@ in the <a href="../Classes/EXDrawing.html">EXDrawing</a> object and register und
 					<div class="section section-methods">
 						<a title="Instance Methods" name="instance_methods"></a>
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
-						
-						<div class="section-method">
-	<a name="//api/name/alertView:didDismissWithButtonIndex:" title="alertView:didDismissWithButtonIndex:"></a>
-	<h3 class="subsubtitle method-title">alertView:didDismissWithButtonIndex:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Respond to UIAlertView that gets called up in the event of any network errors.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)alertView:(UIAlertView *)<em>alertView</em> didDismissWithButtonIndex:(NSInteger)<em>buttonIndex</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>alertView</em></dt>
-			<dd><p>The alert view that was dismissed.</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>buttonIndex</em></dt>
-			<dd><p>The index of the button pressed to dismiss the alert view.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Respond to UIAlertView that gets called up in the event of any network errors.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">EXDrawingViewController.m</code><br />
-	</div>				
-	
-	
-</div>
 						
 						<div class="section-method">
 	<a name="//api/name/clearDrawing:" title="clearDrawing:"></a>
@@ -1079,48 +934,7 @@ redraws from paths, and resets the <a href="#//api/name/undoManager">undoManager
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">EXDrawingViewController.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/didReceiveMemoryWarning" title="didReceiveMemoryWarning"></a>
-	<h3 class="subsubtitle method-title">didReceiveMemoryWarning</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Stub for overriding.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)didReceiveMemoryWarning</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Stub for overriding.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">EXDrawingViewController.m</code><br />
+		<code class="declared-in-ref">EXTrainingViewController.h</code><br />
 	</div>				
 	
 	
@@ -1173,49 +987,29 @@ in the <a href="../Classes/EXDrawing.html">EXDrawing</a> object and register und
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">EXDrawingViewController.m</code><br />
+		<code class="declared-in-ref">EXTrainingViewController.m</code><br />
 	</div>				
 	
 	
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/initWithNibName:bundle:" title="initWithNibName:bundle:"></a>
-	<h3 class="subsubtitle method-title">initWithNibName:bundle:</h3>
+	<a name="//api/name/getNewSymbol" title="getNewSymbol"></a>
+	<h3 class="subsubtitle method-title">getNewSymbol</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Stub for overriding.</p>
+		<p>Get a new <a href="#//api/name/symbol">symbol</a> from the API for training.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (id)initWithNibName:(NSString *)<em>nibNameOrNil</em> bundle:(NSBundle *)<em>nibBundleOrNil</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)getNewSymbol</code></div>
 
     
 	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>nibNameOrNil</em></dt>
-			<dd><p>The NIB name (or nil).</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>nibBundleOrNil</em></dt>
-			<dd><p>The NIB Bundle (or nil).</p></dd>
-		</dl>
-		
-	</div>
 	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>The object.</p>
-	</div>
 	
 	
 	
@@ -1223,7 +1017,7 @@ in the <a href="../Classes/EXDrawing.html">EXDrawing</a> object and register und
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Stub for overriding.</p>
+		<p>Get a new <a href="#//api/name/symbol">symbol</a> from the API for training.</p>
 	</div>
 	
 	
@@ -1234,26 +1028,26 @@ in the <a href="../Classes/EXDrawing.html">EXDrawing</a> object and register und
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">EXDrawingViewController.m</code><br />
+		<code class="declared-in-ref">EXTrainingViewController.m</code><br />
 	</div>				
 	
 	
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/newExpressionFailed:" title="newExpressionFailed:"></a>
-	<h3 class="subsubtitle method-title">newExpressionFailed:</h3>
+	<a name="//api/name/imageUploaded:" title="imageUploaded:"></a>
+	<h3 class="subsubtitle method-title">imageUploaded:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Expression request has failed. Handle its failure (notify user, halt current
-process of upload, etc.</p>
+		<p>Delegate method fired off when the image has been successfully uploaded
+to Barista.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (void)newExpressionFailed:(ASIHTTPRequest *)<em>request</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)imageUploaded:(ASIHTTPRequest *)<em>request</em></code></div>
 
     
 	
@@ -1262,7 +1056,7 @@ process of upload, etc.</p>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>request</em></dt>
-			<dd><p>The failed request.</p></dd>
+			<dd><p>The request that was submitted.</p></dd>
 		</dl>
 		
 	</div>
@@ -1275,8 +1069,8 @@ process of upload, etc.</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Expression request has failed. Handle its failure (notify user, halt current
-process of upload, etc.</p>
+		<p>Delegate method fired off when the image has been successfully uploaded
+to Barista.</p>
 	</div>
 	
 	
@@ -1287,7 +1081,7 @@ process of upload, etc.</p>
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">EXDrawingViewController.h</code><br />
+		<code class="declared-in-ref">EXTrainingViewController.h</code><br />
 	</div>				
 	
 	
@@ -1338,166 +1132,7 @@ process of upload, etc.</p>
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">EXDrawingViewController.m</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/receiveNewExpression:" title="receiveNewExpression:"></a>
-	<h3 class="subsubtitle method-title">receiveNewExpression:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Receive the request once it&rsquo;s successfully been made. Extract the expression
-from the response, and start the image upload.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)receiveNewExpression:(ASIHTTPRequest *)<em>request</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>request</em></dt>
-			<dd><p>The completed request.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Receive the request once it&rsquo;s successfully been made. Extract the expression
-from the response, and start the image upload.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">EXDrawingViewController.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/receiveSymbols:" title="receiveSymbols:"></a>
-	<h3 class="subsubtitle method-title">receiveSymbols:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Receive the request for symbols once it&rsquo;s successfully been made. Extract the symbols
-from the response and move forward to show them.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)receiveSymbols:(ASIHTTPRequest *)<em>request</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>request</em></dt>
-			<dd><p>The completed request.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Receive the request for symbols once it&rsquo;s successfully been made. Extract the symbols
-from the response and move forward to show them.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">EXDrawingViewController.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/recognizeDrawing:" title="recognizeDrawing:"></a>
-	<h3 class="subsubtitle method-title">recognizeDrawing:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Start the recognition process. Really issues command to create a new
-expression on Barista&rsquo;s end, then calls <a href="#//api/name/receiveNewExpression:">receiveNewExpression:</a></p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (IBAction)recognizeDrawing:(id)<em>sender</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>sender</em></dt>
-			<dd><p>The sender.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Start the recognition process. Really issues command to create a new
-expression on Barista&rsquo;s end, then calls <a href="#//api/name/receiveNewExpression:">receiveNewExpression:</a></p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">EXDrawingViewController.h</code><br />
+		<code class="declared-in-ref">EXTrainingViewController.m</code><br />
 	</div>				
 	
 	
@@ -1548,7 +1183,7 @@ expression on Barista&rsquo;s end, then calls <a href="#//api/name/receiveNewExp
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">EXDrawingViewController.h</code><br />
+		<code class="declared-in-ref">EXTrainingViewController.h</code><br />
 	</div>				
 	
 	
@@ -1589,7 +1224,111 @@ expression on Barista&rsquo;s end, then calls <a href="#//api/name/receiveNewExp
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">EXDrawingViewController.m</code><br />
+		<code class="declared-in-ref">EXTrainingViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sendTrainingSet:" title="sendTrainingSet:"></a>
+	<h3 class="subsubtitle method-title">sendTrainingSet:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Start the recognition process. Really issues command to create a new
+expression on Barista&rsquo;s end, then calls receiveNewExpression:</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)sendTrainingSet:(id)<em>sender</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sender</em></dt>
+			<dd><p>The sender.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Start the recognition process. Really issues command to create a new
+expression on Barista&rsquo;s end, then calls receiveNewExpression:</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EXTrainingViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setProgress:" title="setProgress:"></a>
+	<h3 class="subsubtitle method-title">setProgress:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Protocol for intercepting HUD setProgress.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setProgress:(float)<em>newProgress</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>newProgress</em></dt>
+			<dd><p>The new value of progress to set.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Protocol for intercepting HUD setProgress.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EXTrainingViewController.h</code><br />
 	</div>				
 	
 	
@@ -1645,7 +1384,7 @@ expression on Barista&rsquo;s end, then calls <a href="#//api/name/receiveNewExp
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">EXDrawingViewController.m</code><br />
+		<code class="declared-in-ref">EXTrainingViewController.m</code><br />
 	</div>				
 	
 	
@@ -1696,38 +1435,27 @@ expression on Barista&rsquo;s end, then calls <a href="#//api/name/receiveNewExp
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">EXDrawingViewController.h</code><br />
+		<code class="declared-in-ref">EXTrainingViewController.h</code><br />
 	</div>				
 	
 	
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/symbolsFailed:" title="symbolsFailed:"></a>
-	<h3 class="subsubtitle method-title">symbolsFailed:</h3>
+	<a name="//api/name/startOver" title="startOver"></a>
+	<h3 class="subsubtitle method-title">startOver</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Symbol request has failed. Handle its failure (notify user, halt current
-process of moving forward, etc.</p>
+		<p>Start a new training event.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (void)symbolsFailed:(ASIHTTPRequest *)<em>request</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)startOver</code></div>
 
     
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>request</em></dt>
-			<dd><p>The failed request.</p></dd>
-		</dl>
-		
-	</div>
 	
 	
 	
@@ -1737,8 +1465,7 @@ process of moving forward, etc.</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Symbol request has failed. Handle its failure (notify user, halt current
-process of moving forward, etc.</p>
+		<p>Start a new training event.</p>
 	</div>
 	
 	
@@ -1749,7 +1476,7 @@ process of moving forward, etc.</p>
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">EXDrawingViewController.h</code><br />
+		<code class="declared-in-ref">EXTrainingViewController.h</code><br />
 	</div>				
 	
 	
@@ -1800,7 +1527,7 @@ process of moving forward, etc.</p>
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">EXDrawingViewController.h</code><br />
+		<code class="declared-in-ref">EXTrainingViewController.h</code><br />
 	</div>				
 	
 	
@@ -1851,7 +1578,7 @@ process of moving forward, etc.</p>
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">EXDrawingViewController.m</code><br />
+		<code class="declared-in-ref">EXTrainingViewController.m</code><br />
 	</div>				
 	
 	
@@ -1902,7 +1629,7 @@ process of moving forward, etc.</p>
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">EXDrawingViewController.m</code><br />
+		<code class="declared-in-ref">EXTrainingViewController.m</code><br />
 	</div>				
 	
 	
@@ -1943,7 +1670,7 @@ process of moving forward, etc.</p>
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">EXDrawingViewController.m</code><br />
+		<code class="declared-in-ref">EXTrainingViewController.m</code><br />
 	</div>				
 	
 	
@@ -1984,7 +1711,7 @@ process of moving forward, etc.</p>
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">EXDrawingViewController.m</code><br />
+		<code class="declared-in-ref">EXTrainingViewController.m</code><br />
 	</div>				
 	
 	

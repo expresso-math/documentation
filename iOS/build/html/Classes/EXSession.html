@@ -51,6 +51,13 @@
 	
 	
 	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/getSymbolForTraining">&nbsp;&nbsp;&nbsp;&nbsp;+ getSymbolForTraining</option>
+	
+	<option value="//api/name/uploadTrainingImage:forSymbol:from:">&nbsp;&nbsp;&nbsp;&nbsp;+ uploadTrainingImage:forSymbol:from:</option>
+	
+	
 	
 	
 	<option value="instance_methods">Instance Methods</option>
@@ -104,6 +111,14 @@
 </ul></li>
 
 
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getSymbolForTraining">getSymbolForTraining</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/uploadTrainingImage:forSymbol:from:">uploadTrainingImage:forSymbol:from:</a></span></li>
+	
+</ul></li>
 
 
 
@@ -161,7 +176,9 @@
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
 						<p>Model-like class that holds onto basic session information (and
-communicates with Barista to change/update it RESTfully.</p>
+communicates with Barista to change/update it RESTfully. Also does a
+couple tasks not dependent on an active session, particularly submitting
+training sets.</p>
 					</div>
 					
 					
@@ -251,6 +268,20 @@ communicates with Barista to change/update it RESTfully.</p>
 	<span class="tooltip">
 		<code><a href="#//api/name/addExpression:">&ndash;&nbsp;addExpression:</a></code>
 		<span class="tooltip"><p>Add an expression to the local object.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getSymbolForTraining">+&nbsp;getSymbolForTraining</a></code>
+		<span class="tooltip"><p>Get a symbol that Barista wants the user to generate a training set for.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/uploadTrainingImage:forSymbol:from:">+&nbsp;uploadTrainingImage:forSymbol:from:</a></code>
+		<span class="tooltip"><p>Upload an image for training, for the given symbol, from the given ViewController.</p></span>
 	</span>
 	
 	
@@ -434,6 +465,119 @@ communicates with Barista to change/update it RESTfully.</p>
 					</div>
 					
 					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/getSymbolForTraining" title="getSymbolForTraining"></a>
+	<h3 class="subsubtitle method-title">getSymbolForTraining</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get a symbol that Barista wants the user to generate a training set for.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)getSymbolForTraining</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The symbol, as a string.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get a symbol that Barista wants the user to generate a training set for.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EXSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/uploadTrainingImage:forSymbol:from:" title="uploadTrainingImage:forSymbol:from:"></a>
+	<h3 class="subsubtitle method-title">uploadTrainingImage:forSymbol:from:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Upload an image for training, for the given symbol, from the given ViewController.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)uploadTrainingImage:(UIImage *)<em>image</em> forSymbol:(NSString *)<em>symbol</em> from:(id)<em>sender</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>image</em></dt>
+			<dd><p>The UIImage of the training image.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>symbol</em></dt>
+			<dd><p>The symbol we&rsquo;re training.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sender</em></dt>
+			<dd><p>The ViewController who sent the message.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Upload an image for training, for the given symbol, from the given ViewController.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EXSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
 					
 					
 					
@@ -828,7 +972,7 @@ request completes or fails.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Josef Lange &amp; Daniel Guilak. All rights reserved. (Last updated: 2013-03-16)</span><br />
+						<p><span class="copyright">&copy; 2013 Josef Lange &amp; Daniel Guilak. All rights reserved. (Last updated: 2013-03-19)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
 						
