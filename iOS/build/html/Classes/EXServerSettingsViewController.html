@@ -27,6 +27,8 @@
 					<select id="jumpTo">
 	<option value="top">Jump To&#133;</option>
 	
+	<option value="overview">Overview</option>
+	
 	
 	
 	
@@ -36,11 +38,26 @@
 	
 	
 	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/pop">&nbsp;&nbsp;&nbsp;&nbsp;pop</option>
+	
+	<option value="//api/name/serverAddressTextView">&nbsp;&nbsp;&nbsp;&nbsp;serverAddressTextView</option>
+	
+	<option value="//api/name/serverSelector">&nbsp;&nbsp;&nbsp;&nbsp;serverSelector</option>
+	
+	<option value="//api/name/settingsSaver">&nbsp;&nbsp;&nbsp;&nbsp;settingsSaver</option>
+	
+	
 	
 	
 	
 	
 	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/saveSettings:">&nbsp;&nbsp;&nbsp;&nbsp;- saveSettings:</option>
+	
+	<option value="//api/name/selectionChanged:">&nbsp;&nbsp;&nbsp;&nbsp;- selectionChanged:</option>
 	
 	<option value="//api/name/shouldAutorotateToInterfaceOrientation:">&nbsp;&nbsp;&nbsp;&nbsp;- shouldAutorotateToInterfaceOrientation:</option>
 	
@@ -53,6 +70,8 @@
 		<nav id="tocContainer" class="isShowingTOC">
 			<ul id="toc" role="tree">
 				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
 
 
 
@@ -64,11 +83,27 @@
 
 
 
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pop">pop</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/serverAddressTextView">serverAddressTextView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/serverSelector">serverSelector</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/settingsSaver">settingsSaver</a></span></li>
+	
+</ul></li>
+
 
 
 
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/saveSettings:">saveSettings:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/selectionChanged:">selectionChanged:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shouldAutorotateToInterfaceOrientation:">shouldAutorotateToInterfaceOrientation:</a></span></li>
 	
@@ -98,11 +133,22 @@
 	<td class="specification-title">Inherits from</td>
 	<td class="specification-value">UIViewController</td>
 </tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">UIAlertViewDelegate<br />UITextViewDelegate</td>
+</tr><tr>
 	<td class="specification-title">Declared in</td>
 	<td class="specification-value">EXServerSettingsViewController.h<br />EXServerSettingsViewController.m</td>
 </tr>
 						</tbody></table></div>
 					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>ViewController to manage the user modifying server settings.</p>
+					</div>
 					
 					
 					
@@ -114,7 +160,57 @@
 						
 						
 						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/serverSelector">&nbsp;&nbsp;serverSelector</a></code>
+		<span class="tooltip"><p>The segmented control that selects which server is to be used.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/serverAddressTextView">&nbsp;&nbsp;serverAddressTextView</a></code>
+		<span class="tooltip"><p>The text view that shows the server hostname (and port)</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/settingsSaver">&nbsp;&nbsp;settingsSaver</a></code>
+		<span class="tooltip"><p>The button to <a href="#//api/name/save">save</a> settings.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pop">&nbsp;&nbsp;pop</a></code>
+		<span class="tooltip"><p>Popover controller that has presented this view.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/selectionChanged:">&ndash;&nbsp;selectionChanged:</a></code>
+		<span class="tooltip"><p>Respond to the server segmented control changing.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/saveSettings:">&ndash;&nbsp;saveSettings:</a></code>
+		<span class="tooltip"><p>Save the settings set by the user.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
 						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
 
 						<ul class="task-list">
 							<li>
@@ -133,6 +229,176 @@
 					
 					
 					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/pop" title="pop"></a>
+	<h3 class="subsubtitle method-title">pop</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Popover controller that has presented this view.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) UIPopoverController *pop</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Popover controller that has presented this view.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EXServerSettingsViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/serverAddressTextView" title="serverAddressTextView"></a>
+	<h3 class="subsubtitle method-title">serverAddressTextView</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The text view that shows the server hostname (and port)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UITextView *serverAddressTextView</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The text view that shows the server hostname (and port)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EXServerSettingsViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/serverSelector" title="serverSelector"></a>
+	<h3 class="subsubtitle method-title">serverSelector</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The segmented control that selects which server is to be used.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UISegmentedControl *serverSelector</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The segmented control that selects which server is to be used.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EXServerSettingsViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/settingsSaver" title="settingsSaver"></a>
+	<h3 class="subsubtitle method-title">settingsSaver</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The button to <a href="#//api/name/save">save</a> settings.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UIButton *settingsSaver</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The button to <a href="#//api/name/save">save</a> settings.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EXServerSettingsViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
 					
 					
 					
@@ -140,6 +406,108 @@
 					<div class="section section-methods">
 						<a title="Instance Methods" name="instance_methods"></a>
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/saveSettings:" title="saveSettings:"></a>
+	<h3 class="subsubtitle method-title">saveSettings:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Save the settings set by the user.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)saveSettings:(id)<em>sender</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sender</em></dt>
+			<dd><p>The sender of the message (usually UIButton&hellip;)</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Save the settings set by the user.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EXServerSettingsViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/selectionChanged:" title="selectionChanged:"></a>
+	<h3 class="subsubtitle method-title">selectionChanged:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Respond to the server segmented control changing.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)selectionChanged:(UISegmentedControl *)<em>sender</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sender</em></dt>
+			<dd><p>The UISegmentedControl sending the message.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Respond to the server segmented control changing.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EXServerSettingsViewController.h</code><br />
+	</div>				
+	
+	
+</div>
 						
 						<div class="section-method">
 	<a name="//api/name/shouldAutorotateToInterfaceOrientation:" title="shouldAutorotateToInterfaceOrientation:"></a>
@@ -210,7 +578,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Josef Lange &amp; Daniel Guilak. All rights reserved. (Last updated: 2013-04-14)</span><br />
+						<p><span class="copyright">&copy; 2013 Josef Lange &amp; Daniel Guilak. All rights reserved. (Last updated: 2013-04-17)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
 						

@@ -27,6 +27,8 @@
 					<select id="jumpTo">
 	<option value="top">Jump To&#133;</option>
 	
+	<option value="overview">Overview</option>
+	
 	
 	
 	
@@ -36,11 +38,30 @@
 	
 	
 	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/image">&nbsp;&nbsp;&nbsp;&nbsp;image</option>
+	
+	<option value="//api/name/imageView">&nbsp;&nbsp;&nbsp;&nbsp;imageView</option>
+	
+	<option value="//api/name/pop">&nbsp;&nbsp;&nbsp;&nbsp;pop</option>
+	
+	<option value="//api/name/setSymbol">&nbsp;&nbsp;&nbsp;&nbsp;setSymbol</option>
+	
+	<option value="//api/name/symbol">&nbsp;&nbsp;&nbsp;&nbsp;symbol</option>
+	
+	<option value="//api/name/symbolLabel">&nbsp;&nbsp;&nbsp;&nbsp;symbolLabel</option>
+	
+	<option value="//api/name/symbolText">&nbsp;&nbsp;&nbsp;&nbsp;symbolText</option>
+	
+	
 	
 	
 	
 	
 	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/saveSymbol:">&nbsp;&nbsp;&nbsp;&nbsp;- saveSymbol:</option>
 	
 	<option value="//api/name/shouldAutorotateToInterfaceOrientation:">&nbsp;&nbsp;&nbsp;&nbsp;- shouldAutorotateToInterfaceOrientation:</option>
 	
@@ -53,6 +74,8 @@
 		<nav id="tocContainer" class="isShowingTOC">
 			<ul id="toc" role="tree">
 				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
 
 
 
@@ -64,11 +87,31 @@
 
 
 
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/image">image</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/imageView">imageView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pop">pop</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setSymbol">setSymbol</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/symbol">symbol</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/symbolLabel">symbolLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/symbolText">symbolText</a></span></li>
+	
+</ul></li>
+
 
 
 
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/saveSymbol:">saveSymbol:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shouldAutorotateToInterfaceOrientation:">shouldAutorotateToInterfaceOrientation:</a></span></li>
 	
@@ -106,6 +149,14 @@
 					
 					
 					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>View Controller for modifying the identified representation of a <a href="#//api/name/symbol">symbol</a>.</p>
+					</div>
+					
+					
+					
 					
 					
 					<div class="section section-tasks">
@@ -114,7 +165,71 @@
 						
 						
 						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/symbol">&nbsp;&nbsp;symbol</a></code>
+		<span class="tooltip"><p>The symbol we&rsquo;re modifying.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/imageView">&nbsp;&nbsp;imageView</a></code>
+		<span class="tooltip"><p>The <a href="#//api/name/image">image</a> view that holds the segment of the drawn <a href="#//api/name/image">image</a>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/symbolLabel">&nbsp;&nbsp;symbolLabel</a></code>
+		<span class="tooltip"><p>The label for the <a href="#//api/name/symbol">symbol</a>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/symbolText">&nbsp;&nbsp;symbolText</a></code>
+		<span class="tooltip"><p>The text of a the representation of the <a href="#//api/name/symbol">symbol</a>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setSymbol">&nbsp;&nbsp;setSymbol</a></code>
+		<span class="tooltip"><p>The current <a href="#//api/name/symbol">symbol</a> we&rsquo;re set to.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/image">&nbsp;&nbsp;image</a></code>
+		<span class="tooltip"><p>The image we&rsquo;re displaying in <a href="#//api/name/imageView">imageView</a>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pop">&nbsp;&nbsp;pop</a></code>
+		<span class="tooltip"><p>The popover that presented this ViewController.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/saveSymbol:">&ndash;&nbsp;saveSymbol:</a></code>
+		<span class="tooltip"><p>Save the symbol&rsquo;s state and go away.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
 						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
 
 						<ul class="task-list">
 							<li>
@@ -133,6 +248,299 @@
 					
 					
 					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/image" title="image"></a>
+	<h3 class="subsubtitle method-title">image</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The image we&rsquo;re displaying in <a href="#//api/name/imageView">imageView</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) UIImage *image</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The image we&rsquo;re displaying in <a href="#//api/name/imageView">imageView</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EXSymbolCorrectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/imageView" title="imageView"></a>
+	<h3 class="subsubtitle method-title">imageView</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The <a href="#//api/name/image">image</a> view that holds the segment of the drawn <a href="#//api/name/image">image</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UIImageView *imageView</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The <a href="#//api/name/image">image</a> view that holds the segment of the drawn <a href="#//api/name/image">image</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EXSymbolCorrectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pop" title="pop"></a>
+	<h3 class="subsubtitle method-title">pop</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The popover that presented this ViewController.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) UIPopoverController *pop</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The popover that presented this ViewController.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EXSymbolCorrectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setSymbol" title="setSymbol"></a>
+	<h3 class="subsubtitle method-title">setSymbol</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The current <a href="#//api/name/symbol">symbol</a> we&rsquo;re set to.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) NSString *setSymbol</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The current <a href="#//api/name/symbol">symbol</a> we&rsquo;re set to.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EXSymbolCorrectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/symbol" title="symbol"></a>
+	<h3 class="subsubtitle method-title">symbol</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The symbol we&rsquo;re modifying.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) EXSymbol *symbol</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The symbol we&rsquo;re modifying.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EXSymbolCorrectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/symbolLabel" title="symbolLabel"></a>
+	<h3 class="subsubtitle method-title">symbolLabel</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The label for the <a href="#//api/name/symbol">symbol</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UILabel *symbolLabel</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The label for the <a href="#//api/name/symbol">symbol</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EXSymbolCorrectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/symbolText" title="symbolText"></a>
+	<h3 class="subsubtitle method-title">symbolText</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The text of a the representation of the <a href="#//api/name/symbol">symbol</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UITextView *symbolText</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The text of a the representation of the <a href="#//api/name/symbol">symbol</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EXSymbolCorrectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
 					
 					
 					
@@ -140,6 +548,57 @@
 					<div class="section section-methods">
 						<a title="Instance Methods" name="instance_methods"></a>
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/saveSymbol:" title="saveSymbol:"></a>
+	<h3 class="subsubtitle method-title">saveSymbol:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Save the symbol&rsquo;s state and go away.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)saveSymbol:(id)<em>sender</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sender</em></dt>
+			<dd><p>The object sending the message.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Save the symbol&rsquo;s state and go away.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EXSymbolCorrectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
 						
 						<div class="section-method">
 	<a name="//api/name/shouldAutorotateToInterfaceOrientation:" title="shouldAutorotateToInterfaceOrientation:"></a>
@@ -210,7 +669,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Josef Lange &amp; Daniel Guilak. All rights reserved. (Last updated: 2013-04-14)</span><br />
+						<p><span class="copyright">&copy; 2013 Josef Lange &amp; Daniel Guilak. All rights reserved. (Last updated: 2013-04-17)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
 						
