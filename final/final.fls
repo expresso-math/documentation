@@ -4,8 +4,8 @@ INPUT /usr/local/texlive/2012basic/texmf/web2c/texmf.cnf
 INPUT /usr/local/texlive/2012basic/texmf-var/web2c/pdftex/pdflatex.fmt
 INPUT final.tex
 OUTPUT final.log
-INPUT /usr/local/texlive/2012basic/texmf-local/tex/latex/acm_proc_article-sp.cls
-INPUT /usr/local/texlive/2012basic/texmf-local/tex/latex/acm_proc_article-sp.cls
+INPUT acm_proc_article-sp.cls
+INPUT acm_proc_article-sp.cls
 INPUT /usr/local/texlive/2012basic/texmf-dist/tex/latex/graphics/epsfig.sty
 INPUT /usr/local/texlive/2012basic/texmf-dist/tex/latex/graphics/epsfig.sty
 INPUT /usr/local/texlive/2012basic/texmf-dist/tex/latex/graphics/graphicx.sty
