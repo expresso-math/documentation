@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex final"] 1366509363 "final.aux" "final.bbl" "final" 1366509653
+["bibtex final"] 1368654994 "final.aux" "final.bbl" "final" 1368654999
   "/usr/local/texlive/2012basic/texmf-dist/bibtex/bst/base/abbrv.bst" 1292289607 20329 b5fed53e10044d0f8112183785c759b1 ""
-  "final.aux" 1366509653 213 768035ed872afa1d732559e35b0720ac ""
+  "final.aux" 1368654994 1639 d70505e8cf54cca9dfb6797abf4dc4bb ""
   "final.bcf" 0 -1 0 ""
   "final_citations.bib" 1366508904 8507 daaccce34a6edcb534eb6f4c581b5d74 ""
   (generated)
   "final.blg"
   "final.bbl"
-["pdflatex"] 1366509653 "final.tex" "final.pdf" "final" 1366509653
+["pdflatex"] 1368654994 "final.tex" "final.pdf" "final" 1368654999
   "/usr/local/texlive/2012basic/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2012basic/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm" 1136768653 4484 b828043cbd581d289d955903c1339981 ""
   "/usr/local/texlive/2012basic/texmf-dist/fonts/tfm/adobe/helvetic/phvb8t.tfm" 1136768653 6628 34c39492c0adc454c1c199922bba8363 ""
@@ -22,6 +22,7 @@
   "/usr/local/texlive/2012basic/texmf-dist/fonts/tfm/adobe/times/ptmri8t.tfm" 1136768653 6944 94c55ad86e6ea2826f78ba2240d50df9 ""
   "/usr/local/texlive/2012basic/texmf-dist/fonts/tfm/public/ae/aer6.tfm" 1136768653 6108 fc653ad7645037d415b4449e8bf7cf8f ""
   "/usr/local/texlive/2012basic/texmf-dist/fonts/tfm/public/ae/aer9.tfm" 1136768653 6076 dd5a5352d066d5b2d2092b63c8cabf28 ""
+  "/usr/local/texlive/2012basic/texmf-dist/fonts/tfm/public/ae/aeti9.tfm" 1136768653 7240 b5c2a48053d60f3c984fb3fe77523873 ""
   "/usr/local/texlive/2012basic/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2012basic/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm" 1246382020 996 a18840b13b499c08ac2de96a99eda4bc ""
   "/usr/local/texlive/2012basic/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -34,14 +35,17 @@
   "/usr/local/texlive/2012basic/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm" 1136768653 1524 d89e2d087a9828407a196f428428ef4a ""
   "/usr/local/texlive/2012basic/texmf-dist/fonts/tfm/public/cm/cmr6.tfm" 1136768653 1300 b62933e007d01cfd073f79b963c01526 ""
   "/usr/local/texlive/2012basic/texmf-dist/fonts/tfm/public/cm/cmr9.tfm" 1136768653 1292 6b21b9c2c7bebb38aa2273f7ca0fb3af ""
+  "/usr/local/texlive/2012basic/texmf-dist/fonts/tfm/public/cm/cmsl9.tfm" 1136768653 1504 db0beb0fddc52727302ccaeb61bc9b3d ""
   "/usr/local/texlive/2012basic/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/local/texlive/2012basic/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm" 1136768653 1116 25a7bf822c58caf309a702ef79f4afbb ""
+  "/usr/local/texlive/2012basic/texmf-dist/fonts/tfm/public/cm/cmti9.tfm" 1136768653 1476 cccc6cc4935c18ec3d5623b77ecb8b74 ""
   "/usr/local/texlive/2012basic/texmf-dist/fonts/tfm/public/cm/cmu10.tfm" 1136768653 1276 d1b8c21fa8328272b4e5e6bc10761e6e ""
   "/usr/local/texlive/2012basic/texmf-dist/fonts/tfm/public/latex-fonts/lasy5.tfm" 1136768653 520 d082ac03a1087bc1ec2a06e24a9f68c0 ""
   "/usr/local/texlive/2012basic/texmf-dist/fonts/tfm/public/latex-fonts/lasy6.tfm" 1136768653 520 4889cce2180234b97cad636b6039c722 ""
   "/usr/local/texlive/2012basic/texmf-dist/fonts/tfm/public/latex-fonts/lasy9.tfm" 1136768653 520 1cc7cc05f4d7bae5c23bf7516f88fa52 ""
   "/usr/local/texlive/2012basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1248133631 32734 69e00a6b65cedb993666e42eedb3d48f ""
   "/usr/local/texlive/2012basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb" 1248133631 33993 9b89b85fd2d9df0482bd47194d1d3bf3 ""
+  "/usr/local/texlive/2012basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb" 1248133631 36310 f5ddc6715cc60deb16d9db5ded6a9391 ""
   "/usr/local/texlive/2012basic/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb" 1136849748 35941 f27169cc74234d5bd5e4cca5abafaabb ""
   "/usr/local/texlive/2012basic/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb" 1136849748 44648 23115b2a545ebfe2c526c3ca99db8b95 ""
   "/usr/local/texlive/2012basic/texmf-dist/fonts/type1/urw/times/utmb8a.pfb" 1136849748 44729 811d6c62865936705a31c797a1d5dada ""
@@ -50,6 +54,7 @@
   "/usr/local/texlive/2012basic/texmf-dist/fonts/vf/adobe/times/ptmb8t.vf" 1136768653 2340 df9c920cc5688ebbf16a93f45ce7bdd3 ""
   "/usr/local/texlive/2012basic/texmf-dist/fonts/vf/public/ae/aer6.vf" 1136768653 3176 2fff6349f967bea351d9cbbd0dbffa36 ""
   "/usr/local/texlive/2012basic/texmf-dist/fonts/vf/public/ae/aer9.vf" 1136768653 3156 f2dea5d0f126618ccda762d665556ed9 ""
+  "/usr/local/texlive/2012basic/texmf-dist/fonts/vf/public/ae/aeti9.vf" 1136768653 3160 0b9c9ec528731f13d658fbd15c0a6251 ""
   "/usr/local/texlive/2012basic/texmf-dist/tex/context/base/supp-pdf.mkii" 1337017135 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2012basic/texmf-dist/tex/generic/oberdiek/etexcmds.sty" 1335995445 7612 c47308d923ec19888707b0f1792b326a ""
   "/usr/local/texlive/2012basic/texmf-dist/tex/generic/oberdiek/ifluatex.sty" 1303254447 7324 11d14f318d865f420e692d4e6c9c18c3 ""
@@ -89,9 +94,9 @@
   "/usr/local/texlive/2012basic/texmf-var/web2c/pdftex/pdflatex.fmt" 1365639614 2433033 c823e1c04a6983a61c6e0f4ce27a7c10 ""
   "/usr/local/texlive/2012basic/texmf.cnf" 1341106729 623 525eaa074d00c0925b602abe03a78665 ""
   "/usr/local/texlive/2012basic/texmf/web2c/texmf.cnf" 1336865692 31299 729e216d9b945005c0d4b079c0500bc9 ""
-  "final.aux" 1366509653 213 768035ed872afa1d732559e35b0720ac ""
-  "final.bbl" 1366509363 49 0eba253fc001332e731e8aba3f23127b "bibtex final"
-  "final.tex" 1366509653 2960 96da1a90d332d389f50f58072017b173 ""
+  "final.aux" 1368654994 1639 d70505e8cf54cca9dfb6797abf4dc4bb ""
+  "final.bbl" 1368654994 692 231fdd6f5be5ae6b66013054ae35a50d "bibtex final"
+  "final.tex" 1368654994 6695 c6f8466d9c07c0cc0d2dc93df4ac30d6 ""
   (generated)
   "final.pdf"
   "final.aux"

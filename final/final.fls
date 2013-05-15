@@ -113,8 +113,6 @@ INPUT /usr/local/texlive/2012basic/texmf-dist/fonts/tfm/public/latex-fonts/lasy9
 INPUT /usr/local/texlive/2012basic/texmf-dist/fonts/tfm/public/latex-fonts/lasy6.tfm
 INPUT /usr/local/texlive/2012basic/texmf-dist/fonts/tfm/public/latex-fonts/lasy5.tfm
 INPUT /usr/local/texlive/2012basic/texmf-dist/fonts/tfm/public/ae/aer6.tfm
-INPUT final.bbl
-INPUT final.bbl
 OUTPUT final.pdf
 INPUT /usr/local/texlive/2012basic/texmf-dist/fonts/vf/adobe/helvetic/phvb8t.vf
 INPUT /usr/local/texlive/2012basic/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm
@@ -133,10 +131,17 @@ INPUT /usr/local/texlive/2012basic/texmf-dist/fonts/tfm/public/cm/cmu10.tfm
 INPUT /usr/local/texlive/2012basic/texmf-dist/fonts/vf/public/ae/aer6.vf
 INPUT /usr/local/texlive/2012basic/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
 INPUT /usr/local/texlive/2012basic/texmf-dist/fonts/tfm/public/cm/cmu10.tfm
+INPUT final.bbl
+INPUT final.bbl
+INPUT /usr/local/texlive/2012basic/texmf-dist/fonts/tfm/public/ae/aeti9.tfm
+INPUT /usr/local/texlive/2012basic/texmf-dist/fonts/vf/public/ae/aeti9.vf
+INPUT /usr/local/texlive/2012basic/texmf-dist/fonts/tfm/public/cm/cmti9.tfm
+INPUT /usr/local/texlive/2012basic/texmf-dist/fonts/tfm/public/cm/cmsl9.tfm
 INPUT final.aux
 INPUT /usr/local/texlive/2012basic/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT /usr/local/texlive/2012basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
 INPUT /usr/local/texlive/2012basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb
+INPUT /usr/local/texlive/2012basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb
 INPUT /usr/local/texlive/2012basic/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb
 INPUT /usr/local/texlive/2012basic/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb
 INPUT /usr/local/texlive/2012basic/texmf-dist/fonts/type1/urw/times/utmb8a.pfb
