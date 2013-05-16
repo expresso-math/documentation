@@ -134,7 +134,15 @@ There are many advantages to implementing this sort of architecture. The ability
 \section{Evaluation}
 
 \section{Discussion \& Analysis}
+Throughout the process of development, we ran into several challenges, some of which we successfully worked through or around, others we did not. Among these challenges were character recognition, image processing, poorly-documented resources, and a proclivity for getting ``hung up'' on a particular issue.
 
+Na\"{i}vely, we assumed that the smaller set of symbols to be recognized (digits and operators as opposed to letters) would make the recognition process easier. While it is true in some sense, the ease it gains is in increased accuracy of a working recognition engine. We didn't have one of those. We shuffled through several recognition engines and implementations of various forms of Artificial Intelligence, none of which seemed capable of successfully identifying symbols. This, obviously, caused a large issue that cascaded into other segments of the project. Because we yearned so desperately to have recognition work, we found ourselve essentially wasting time trying to get recognition to work instead of moving on to other components of the project.
+
+The image processing involved in preparing an image for recognition is suspect to some of our problems. Neither of us were particularly familiar with the technique behind image encoding and still know very little. Our use of \texttt{OpenCV}\footnote{http://opencv.org} and \texttt{PIL} (Python Imaging Library)\footnote{http://www.pythonware.com/products/pil/} was guided by poor documentation and, most of the time, nearly-wild guesses. Perhaps a stronger understanding of images and how one can represent them for input to a Neural Network, for example, might have served us better as we tackled the recognition problem.
+
+The most stark of challenges was certainly symbol recognition, as mentioned above. In addition to our inability to successfully recognize symbols, we found that we simply ran out of time to begin implementation of expression generation. As such, for demonstration purposes, we constructed a ``fake'' engine that spits out the same value for every expression. Not useful in the real world, but as a means to show how the application would work, we were happy with the results.
+
+Moving forward, the obvious path is to select or outrightly build a recognition engine that actually works. That might be a matter of looking harder, waiting until someone actually does it, or becoming incredibly intelligent and perceptive in the ways of the neural network. From there, we'd be able to implement expression generation, which is outlined in several academic articles.
 
 \section{Conclusion}
 
