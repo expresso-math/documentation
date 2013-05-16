@@ -1,50 +1,37 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  16 MAY 2013 10:52
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.4.10)  16 MAY 2013 11:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**final.tex
-(./final.tex
-LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
-rman-x-2012-05-30, ngerman-x-2012-05-30, afrikaans, ancientgreek, ibycus, arabi
-c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
-h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
-h, french, friulan, galician, german, ngerman, swissgerman, monogreek, greek, h
-ungarian, icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, ma
-rathi, oriya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, 
-kurmanji, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk,
- polish, portuguese, romanian, romansh, russian, sanskrit, serbian, serbianc, s
-lovak, slovenian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, 
-welsh, loaded.
-(./acm_proc_article-sp.cls
-(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/epsfig.sty
+**\nonstopmode \input{final.tex}
+(./final.tex (./acm_proc_article-sp.cls
+(/usr/local/texlive/2012basic/texmf-dist/tex/latex/graphics/epsfig.sty
 Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/local/texlive/2012basic/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/local/texlive/2012basic/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/local/texlive/2012basic/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/local/texlive/2012basic/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/graphics.cfg
+(/usr/local/texlive/2012basic/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/pdftex-def/pdftex.def
+(/usr/local/texlive/2012basic/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+(/usr/local/texlive/2012basic/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+(/usr/local/texlive/2012basic/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count79
@@ -55,10 +42,10 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \epsfxsize=\dimen104
 \epsfysize=\dimen105
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/local/texlive/2012basic/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2009/06/22 v3.00
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/usr/local/texlive/2012basic/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 \@emptytoks=\toks15
 \symAMSa=\mathgroup4
@@ -66,24 +53,24 @@ Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
 ))
-(/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amsmath.sty
+(/usr/local/texlive/2012basic/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2000/07/18 v2.13 AMS math features
 \@mathmargin=\skip41
 
 For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2012basic/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/usr/local/texlive/2012basic/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks16
 \ex@=\dimen106
 ))
-(/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(/usr/local/texlive/2012basic/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen107
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amsopn.sty
+(/usr/local/texlive/2012basic/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count80
@@ -151,7 +138,7 @@ Excerpts were taken from (Journal Style) 'esub2acm.cls'.
 \titleboxnoteflag=\count100
 Document Class: acm_proc_article-sp 2009/04/22 - V3.2SP - based on esub2acm.sty
  <23 April 96>
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/latexsym.sty
+(/usr/local/texlive/2012basic/texmf-dist/tex/latex/base/latexsym.sty
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 \symlasy=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
@@ -183,16 +170,16 @@ LaTeX Info: Redefining \cite on input line 1236.
 \acmcopyr=\toks33
 \boilerplate=\toks34
 \copyrightetc=\toks35
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/fontenc.sty
+(/usr/local/texlive/2012basic/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/t1enc.def
+(/usr/local/texlive/2012basic/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 )
 LaTeX Font Info:    Try loading font information for T1+aer on input line 100.
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/ae/t1aer.fd
+(/usr/local/texlive/2012basic/texmf-dist/tex/latex/ae/t1aer.fd
 File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
 ))) (./final.aux)
 \openout1 = `final.aux'.
@@ -209,8 +196,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
-
-(/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
+(/usr/local/texlive/2012basic/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count109
 \scratchdimen=\dimen123
@@ -223,15 +209,15 @@ LaTeX Font Info:    ... okay on input line 7.
 \MPnumerator=\count113
 \makeMPintoPDFobject=\count114
 \everyMPtoPDFconversion=\toks37
-) (/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+) (/usr/local/texlive/2012basic/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+(/usr/local/texlive/2012basic/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
-(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+(/usr/local/texlive/2012basic/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
@@ -240,22 +226,21 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/local/texlive/2012basic/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/local/texlive/2012basic/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 
-(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+(/usr/local/texlive/2012basic/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
 Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-))
-(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+)) (/usr/local/texlive/2012basic/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 
-(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(/usr/local/texlive/2012basic/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
 
-(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(/usr/local/texlive/2012basic/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
@@ -267,80 +252,100 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/local/texlive/2012basic/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    Try loading font information for U+msa on input line 31.
-
-(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (/usr/local/texlive/2012basic/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 31.
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsb.fd
+(/usr/local/texlive/2012basic/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for U+lasy on input line 31.
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/ulasy.fd
+(/usr/local/texlive/2012basic/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Overfull \hbox (5.39796pt too wide) in paragraph at lines 50--51
-\T1/aer/m/n/9 General hand-writ-ing recog-ni-tion so-lu-tions are fre-quently o
-ver-
+Underfull \hbox (badness 10000) in paragraph at lines 46--46
+[][]\T1/aer/m/n/9 http://www.visionobjects.com/en/myscript/about-
  []
 
-[1{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+[1{/usr/local/texlive/2012basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-<user_workflow.pdf, id=11, 630.355pt x 525.965pt>
+<user_workflow.pdf, id=12, 630.355pt x 525.965pt>
 File: user_workflow.pdf Graphic file (type pdf)
  <use user_workflow.pdf>
-Package pdftex.def Info: user_workflow.pdf used on input line 84.
+Package pdftex.def Info: user_workflow.pdf used on input line 82.
 (pdftex.def)             Requested size: 504.0pt x 420.53981pt.
 
-<final_chart.pdf, id=12, 720.6925pt x 265.99374pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
+[3 <./user_workflow.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 91--91
+[][]\T1/aer/m/n/9 http://mobile.tutsplus.com/tutorials/iphone/ios-
+ []
+
+LaTeX Font Info:    Try loading font information for T1+aett on input line 91.
+(/usr/local/texlive/2012basic/texmf-dist/tex/latex/ae/t1aett.fd
+File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
+)
+<final_chart.pdf, id=57, 720.6925pt x 265.99374pt>
 File: final_chart.pdf Graphic file (type pdf)
  <use final_chart.pdf>
-Package pdftex.def Info: final_chart.pdf used on input line 97.
+Package pdftex.def Info: final_chart.pdf used on input line 103.
 (pdftex.def)             Requested size: 504.0pt x 186.01576pt.
 
-Overfull \hbox (15.37662pt too wide) in paragraph at lines 102--103
+Overfull \hbox (15.37662pt too wide) in paragraph at lines 108--109
 \T1/aer/m/n/9 client-server, cacheable com-mu-ni-ca-tions pro-to-col''[1]. In e
 ssence,
  []
 
-[2] [3 <./user_workflow.pdf>]
-Overfull \hbox (3.1747pt too wide) in paragraph at lines 104--105
+
+Overfull \hbox (3.1747pt too wide) in paragraph at lines 110--111
 \T1/aer/m/n/9 works for the rapid de-vel-op-ment of REST-minded API server.
  []
 
-(./final.bbl [4 <./final_chart.pdf>]) [5
 
-] (./final.aux) ) 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4]
+(./final.bbl)
+Overfull \vbox (222.76172pt too high) has occurred while \output is active []
+
+
+[5
+
+ <./final_chart.pdf>] (./final.aux) ) 
 Here is how much of TeX's memory you used:
- 2794 strings out of 493488
- 35525 string characters out of 3141326
- 97288 words of memory out of 3000000
- 6024 multiletter control sequences out of 15000+200000
- 53776 words of font info for 74 fonts, out of 3000000 for 9000
- 957 hyphenation exceptions out of 8191
- 41i,10n,26p,969b,267s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.en
-c}</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb>
-</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
-usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr
-/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/lo
-cal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/loca
-l/texlive/2012/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texli
-ve/2012/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2012
-/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
-Output written on final.pdf (5 pages, 4799046 bytes).
+ 2818 strings out of 494578
+ 36315 string characters out of 3168574
+ 96450 words of memory out of 3000000
+ 5960 multiletter control sequences out of 15000+200000
+ 54264 words of font info for 76 fonts, out of 3000000 for 9000
+ 314 hyphenation exceptions out of 8191
+ 42i,10n,26p,1310b,265s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2012basic/texmf-dist/f
+onts/enc/dvips/base/8r.enc}</usr/local/texlive/2012basic/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmbx6.pfb></usr/local/texlive/2012basic/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2012basic/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2012basic/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2012basic/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2012basic/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2012basic/texmf-
+dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2012basic/texmf-di
+st/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2012basic/texmf-dist
+/fonts/type1/urw/times/utmb8a.pfb>
+Output written on final.pdf (5 pages, 4815108 bytes).
 PDF statistics:
- 3264 PDF objects out of 3580 (max. 8388607)
- 1647 compressed objects within 17 object streams
+ 3268 PDF objects out of 3580 (max. 8388607)
+ 1650 compressed objects within 17 object streams
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
