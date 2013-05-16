@@ -67,15 +67,15 @@ assemble a stack with little to no monetary obligation. Such a task is commonly 
 The software components of this project stand upon a foundation of three central parts, as generally depicted in Figure~\ref{fig:final_chart}. The primary and most visible component is the client application, Expresso, with which the user directly interacts. Expresso communicates with Barista, the ``front-end'' server hosted on Heroku, via a RESTful API which communicates with ``Bean'' and its related applications, the server which performs all of the computationally intensive work -- image manipulation and symbol recognition -- hosted on Amazon EC2.
 
 \subsection{``Expresso'' (iOS Client)}
-The iOS client for Expresso is the face of its distributed computation system. The user directly interacts with Expresso on his or her iPad, iPhone, or iPod touch, and is able to interact with each step of the recognition and identification process. The application itself was developed using Apple's Xcode IDE, freely available to any who wish to develop apps. 
+The iOS client for Expresso is the face of its distributed computation system. The user directly interacts with Expresso on his or her iPad, iPhone, or iPod touch, and is able to interact with each step of the recognition and identification process. The application itself was developed using Apple's Xcode IDE, freely available to any who wish to develop applications. 
 
 The programming language most commonly used when developing iOS applications is Objective-C, a superset of ANSI C that gives a solid syntax for object-oriented programming. This syntax is a little bizarre at first glance, but is really powerful for rapid development of easily-readable code. 
 
-The availability of first-party frameworks from Apple for developer use is astonishing; if you need to do something you think is more than trivial, chances are there's a class and/or method for that already written. Apple's documentation, too, turned out to be an invaluable tool throughout the development process. 
+The availability of first-party frameworks from Apple for developer use is astonishing; if you need to do something you think is more than trivial, chances are there is a class and/or method for that already written. Apple's documentation, too, turned out to be an invaluable tool throughout the development process. 
 
 Even more exciting, and perhaps a bit confusing at first, was the graphical development of a GUI for these apps. While one can programattically lay out an interface for iOS, Xcode includes an Interface Builder, which on-the-fly actually instantiates UI objects and then archives them away when compiling your application, only later to be unarchived and ready-to-go on launch.
 
-iOS development is build upon the foundation of the Model-View-Controller state of mind. Each class should fall into one of these three categories, and there are guidelines as to how members of each category interact. A model class encapsulates data utilized by applications. A view, rather intuitively, is a means by which we see data, whether it is an image view, a table view, a text view, or something like a button. What's left, then, is the controller, the real hard worker of the three categories. A controller is responsible for, to some degree, ``running the show''. Controllers interact with model objects to see and manipulate data. Controllers, too, interact with view objects in order to either change what the view is showing or doing, or to receive information pertaining to user interaction.
+iOS development is build upon the foundation of the Model-View-Controller software architecture pattern. Each class should fall into one of these three categories, and there are guidelines as to how members of each category interact. A model class encapsulates data utilized by applications. A view, rather intuitively, is a means by which we see data, whether it is an image view, a table view, a text view, or something like a button. What remains, then, is the controller, the real hard worker of the three categories. A controller is responsible for, to some degree, ``running the show''. Controllers interact with model objects to see and manipulate data. Controllers, too, interact with view objects in order to either change what the view is showing or doing, or to receive information pertaining to user interaction.
 
 \begin{figure*}
 \centering
@@ -105,7 +105,7 @@ The Xcode project for Expresso comes in at just under five thousand lines of cod
 \label{fig:final_chart}
 \end{figure*}
 
-A barista, in the coffee world, is the person who takes one's coffee order and completes and delivers one's drink. Likewise, Expresso's Barista takes requests for information and delivers said information. The most fitting method of data transmission for our use was that of a RESTful API. REST, or Representational State Transfer, ``relies on a stateless, client-server, cacheable communications protocol''\cite{elkstein_rest_2008}. In essence, REST relies on the fact that no two entities are ever automatically in-sync with one another; an entitie can request data from another and manipulate it, but it must send the updated data back to its source to keep changes consistent across a system. REST has, as of late, become a \emph{de facto} standard amongst software developers looking for a server-client architecture. 
+A barista, in the coffee world, is the person who takes one's coffee order and completes and delivers one's drink. Likewise, Expresso's Barista takes requests for information and delivers said information. The most fitting method of data transmission for our use was that of a RESTful API. REST, or Representational State Transfer, ``relies on a stateless, client-server, cacheable communications protocol''\cite{elkstein_rest_2008}. In essence, REST relies on the fact that no two entities are ever automatically in-sync with one another; an entity can request data from another and manipulate it, but it must send the updated data back to its source to keep changes consistent across a system. REST has, as of late, become a \emph{de facto} standard amongst software developers looking for a server-client architecture. 
 
 REST is but an idea; there is no official standard to adhere to, nor a strict set of guidelines upon which to build one's API. Fortunately, there exist already-implemented frameworks for the rapid development of REST-minded API server. One such tool is Flask-RESTful\footnote{https://github.com/twilio/flask-restful}, a BSD-licensed Python library that creates a framework for constructing a RESTful API on top of a web server operated by Flask\footnote{http://flask.pocoo.org}. Flask itself is an extremely lightweight web server, also used under the BSD license.
 
@@ -119,7 +119,9 @@ So, with all this in mind, we designed and developed a two-piece system for Bari
 
 Barista definitely serves up a mean cup of Expresso.
 
-\subsection{``Roaster'', ``Bean'', \& ``Grinder''}
+\subsection{``Bean'', ``Roaster'', \& ``Grinder''}
+These three components of Expresso -- Bean, Roaster, and Grinder -- are grouped together because they comprise the so-called ``powerhouse'' of the application as they perform all of the computationally-intensive work: image manipulation and symbol recognition. We decided to host these components separately on an Amazon EC2\footnote{http://aws.amazon.com/ec2/} virtual server T1-micro instance.  We decided to As running additional processes on the Heroku instance was financially prohibitive and Amazon EC2 is free for the first year. All three of these components 
+
 \label{subsection:roaster}
 
 
