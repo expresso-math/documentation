@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex final"] 1368654994 "final.aux" "final.bbl" "final" 1368655430
+["bibtex final"] 1368655590 "final.aux" "final.bbl" "final" 1368655590
   "/usr/local/texlive/2012basic/texmf-dist/bibtex/bst/base/abbrv.bst" 1292289607 20329 b5fed53e10044d0f8112183785c759b1 ""
-  "final.aux" 1368655425 1639 d70505e8cf54cca9dfb6797abf4dc4bb ""
+  "final.aux" 1368655590 1649 cb3b49717686ecf57aea700d38c0015f ""
   "final.bcf" 0 -1 0 ""
   "final_citations.bib" 1366508904 8507 daaccce34a6edcb534eb6f4c581b5d74 ""
   (generated)
   "final.blg"
   "final.bbl"
-["pdflatex"] 1368655425 "final.tex" "final.pdf" "final" 1368655430
+["pdflatex"] 1368655590 "final.tex" "final.pdf" "final" 1368655590
   "/usr/local/texlive/2012basic/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2012basic/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm" 1136768653 4484 b828043cbd581d289d955903c1339981 ""
   "/usr/local/texlive/2012basic/texmf-dist/fonts/tfm/adobe/helvetic/phvb8t.tfm" 1136768653 6628 34c39492c0adc454c1c199922bba8363 ""
@@ -94,9 +94,9 @@
   "/usr/local/texlive/2012basic/texmf.cnf" 1341106729 623 525eaa074d00c0925b602abe03a78665 ""
   "/usr/local/texlive/2012basic/texmf/web2c/texmf.cnf" 1336865692 31299 729e216d9b945005c0d4b079c0500bc9 ""
   "acm_proc_article-sp.cls" 1240418188 59629 49fc14f68a73f326183ff0d766bec0c2 ""
-  "final.aux" 1368655425 1639 d70505e8cf54cca9dfb6797abf4dc4bb ""
-  "final.bbl" 1368654994 692 231fdd6f5be5ae6b66013054ae35a50d "bibtex final"
-  "final.tex" 1368655430 6694 9c53f88b85897340c564375923d71a64 ""
+  "final.aux" 1368655590 1649 cb3b49717686ecf57aea700d38c0015f ""
+  "final.bbl" 1368655590 692 231fdd6f5be5ae6b66013054ae35a50d "bibtex final"
+  "final.tex" 1368655589 6704 4971204c7fd2dc771f854499ac34688c ""
   (generated)
   "final.pdf"
   "final.aux"
