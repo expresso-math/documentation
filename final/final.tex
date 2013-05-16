@@ -128,6 +128,11 @@ implement a system that would allow us to take advantage of all of the virtualiz
 
 There are many advantages to implementing this sort of architecture. The ability to vary priority levels for different tasks allows us to make sure that important and time-sensitive jobs (e.g., those that directly impact the user like symbol recognition) will receive computational attention before ones that are not necessarily imperative (e.g., adding additional data to the symbol recognition data set) for regular function. In addition, Bean allows for scalability as well. Multiple Bean instances can be running on the same machine (or even different machines!) to be able to pull and delegate jobs -- all that is required is that they be able to connect to the Redis instance, whether locally or over the Internet.
 
+\subsubsection{``Roaster''}
+When the user draws an expression, it is saved in a bitmap format and transferred through Barista and to the RQ task queue where Bean delegates the task of splitting up the image into different symbols to Roaster.
+
+In essence, Roaster is a set of methods that use the Python Imaging Library (PIL)\footnote{http://www.pythonware.com/products/pil/‎} and OpenCV\footnote{http://opencv.org/} libraries to 
+
 \label{subsection:roaster}
 
 
