@@ -23,7 +23,7 @@ Daniel Guilak\\
        \affaddr{University of Puget Sound}\\
        \affaddr{3396 Wheelock Student Center}\\
        \affaddr{Tacoma, WA 98416-3396}\\
-       \email{dguilak@pugetsound.edu}
+       \email{daniel.guilak@gmail.com}
 }
        
 \date{20 April, 2013}
@@ -62,9 +62,11 @@ This software could easily improve the classroom environment in all levels of sc
 \section{Method \& Implementation}
 
 \subsection{Overview}
-The software components of this project stand upon a foundation of three central parts. See Figure~\ref{fig:final_chart} for a graphical representation of the basic organization. The primary and most visible component is the client application, with which the user (obviously) directly interacts. PLEASE ADD MORE HERE I JUST STARTED TO SEE WHAT IT WOULD LOOK LIKE WITH THE GRAPHIC AND WHATNOT.
+A large-scale application such as Expresso requires the use of a myriad of different technologies which must all work together in harmony --
+the entirety of which is colloquially called ``The Stack.'' As the authors are financially unstable university students, it was necessary to
+assemble a stack with little to no monetary obligation. Such a task is commonly called ``bootstrapping'' -- a reference to the idiom ``to pull one up by one's bootstraps,'' which we will often cite as reasons we opted to use open-source libraries and free services despite the fact that their premium equivalents generally are better documented and occasionally less buggy. The authors are also happy to release Expresso and its related applications under an open-source license as a serendipitous side-effect of the bootstrapping process.
 
-
+The software components of this project stand upon a foundation of three central parts, as generally depicted in Figure~\ref{fig:final_chart}. The primary and most visible component is the client application, Expresso, with which the user directly interacts. Expresso communicates with Barista, the ``front-end'' server hosted on Heroku, via a RESTful API which communicates with ``Bean'' and its related applications, the server which performs all of the computationally intensive work -- image manipulation and symbol recognition -- hosted on Amazon EC2.
 
 \subsection{``Expresso'' (iOS Client)}
 The iOS client for Expresso is the face of its distributed computation system. The user directly interacts with Expresso on his or her iPad, iPhone, or iPod touch, and is able to interact with each step of the recognition and identification process. The application itself was developed using Apple's Xcode IDE, freely available to any who wish to develop apps. 
