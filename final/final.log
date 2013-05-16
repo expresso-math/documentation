@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  16 MAY 2013 11:12
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  16 MAY 2013 12:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -321,11 +321,11 @@ Overfull \hbox (3.1747pt too wide) in paragraph at lines 104--105
 
 ] (./final.aux) ) 
 Here is how much of TeX's memory you used:
- 2794 strings out of 493488
- 35525 string characters out of 3141326
- 97288 words of memory out of 3000000
+ 2795 strings out of 493488
+ 35532 string characters out of 3141326
+ 97290 words of memory out of 3000000
  6024 multiletter control sequences out of 15000+200000
- 53776 words of font info for 74 fonts, out of 3000000 for 9000
+ 54912 words of font info for 75 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  41i,10n,26p,969b,267s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.en
@@ -336,11 +336,12 @@ usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr
 cal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/loca
 l/texlive/2012/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texli
 ve/2012/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2012
-/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
-Output written on final.pdf (5 pages, 4799972 bytes).
+/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2012/texmf-dis
+t/fonts/type1/urw/times/utmri8a.pfb>
+Output written on final.pdf (5 pages, 4808536 bytes).
 PDF statistics:
- 3264 PDF objects out of 3580 (max. 8388607)
- 1647 compressed objects within 17 object streams
+ 3268 PDF objects out of 3580 (max. 8388607)
+ 1650 compressed objects within 17 object streams
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
