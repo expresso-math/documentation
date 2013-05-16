@@ -120,7 +120,13 @@ So, with all this in mind, we designed and developed a two-piece system for Bari
 Barista definitely serves up a mean cup of Expresso.
 
 \subsection{``Bean'', ``Roaster'', \& ``Grinder''}
-These three components of Expresso -- Bean, Roaster, and Grinder -- are grouped together because they comprise the so-called ``powerhouse'' of the application as they perform all of the computationally-intensive work: image manipulation and symbol recognition. We decided to host these components separately on an Amazon EC2\footnote{http://aws.amazon.com/ec2/} virtual server T1-micro instance.  We decided to As running additional processes on the Heroku instance was financially prohibitive and Amazon EC2 is free for the first year. All three of these components 
+These three components of Expresso -- Bean, Roaster, and Grinder -- are grouped together because they comprise the so-called ``powerhouse'' of the application as they perform all of the computationally-intensive work: image manipulation and symbol recognition. We decided to host these components separately on an Amazon EC2\footnote{http://aws.amazon.com/ec2/} virtual server T1-micro instance rather than as  additional processes on the Heroku instance which proved to be financially prohibitive, while Amazon EC2 is free for the first year. 
+
+\subsubsection{``Bean''}
+As there is a lot of work for the back-end to complete, it was in our best interest to
+implement a system that would allow us to take advantage of all of the virtualized server's resources. Towards that end, we decided on using RQ\footnote{http://python-rq.org/}, a Python library for implementing a priority task queue in a Redis data-structure server instance residing on our server. Barista (on Heroku) submits various different jobs to the RQ task queue on the EC2 instance, and Bean is the worker (technically a modified instance of `rqworker`) that monitors its status and pops tasks off to delegate to Roaster (image manipulation) and Grinder (symbol recognition).
+
+There are many advantages to implementing this sort of architecture. The ability to vary priority levels for different tasks allows us to make sure that important and time-sensitive jobs (e.g., those that directly impact the user like symbol recognition) will receive computational attention before ones that are not necessarily imperative (e.g., adding additional data to the symbol recognition data set) for regular function. In addition, Bean allows for scalability as well. Multiple Bean instances can be running on the same machine (or even different machines!) to be able to pull and delegate jobs -- all that is required is that they be able to connect to the Redis instance, whether locally or over the Internet.
 
 \label{subsection:roaster}
 
