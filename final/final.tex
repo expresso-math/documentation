@@ -80,7 +80,7 @@ iOS development is build upon the foundation of the Model-View-Controller softwa
 
 \begin{figure*}
 \centering
-\includegraphics[width=1.0\textwidth]{user_workflow.pdf}
+\includegraphics[width=0.7\textwidth]{user_workflow.pdf}
 \caption{General User Interaction with Expresso. The user first connects to the web application. Then, they draw their math and transmit it to the cloud server. The server returns to the client the recognized symbols. At this point, the user has the opportunity to correct any mistakes Barista and Roaster may have made. Finally, the user requests the crunched-out math and \LaTeX{} code. This process is further outlined in Section 3.}
 \label{fig:user_workflow}
 \end{figure*}
@@ -100,7 +100,7 @@ The Xcode project for Expresso comes in at just under five thousand lines of cod
 \begin{figure*}
 \centering
 \includegraphics[width=1.0\textwidth]{final_chart.pdf}
-\caption{Simplified Organization of Software Components}
+\caption{Organization of Software Components. The three main components, the client App, Barista, and Roaster are contained within large rectangles and bold text, while databases are represented by cylinders and the transport mechanisms by smaller rectangles. Note that in this figure, Bean is identified as a transport mechanism. It can be considered as such and also as a component of Roaster. }
 \label{fig:final_chart}
 \end{figure*}
 
@@ -175,10 +175,14 @@ The image processing involved in preparing an image for recognition is suspect t
 
 The most stark of challenges was certainly symbol recognition, as mentioned above. In addition to our inability to successfully recognize symbols, we found that we simply ran out of time to begin implementation of expression generation. As such, for demonstration purposes, we constructed a ``fake'' engine that spits out the same value for every expression. Not useful in the real world, but as a means to show how the application would work, we were happy with the results.
 
+Clearly, the problem of symbol recognition has yet to be solved on the whole. On a philosophical level, it will never be truly ``solved''. There is no quantifiable way to measure the success of a pattern-matching task, as the variety of inputs and the noise in their data has an immeasurable degree of variance. That being said, our ability to make machines approximate is without end, and as such our approximations will surely become more accurate over time, both in the hands of better software and more powerful machines.
+
+We believe that alternate input methods are critical to the progress of computing. The paradigm of human-computer interaction is shifting constantly, and exploring the possibilities is a path to take in finding the future of computer usage.
+
 \section{Conclusion}
 Expresso was a challenging project to undertake and one that required focused work and the complete education of a computer science major. At the most basic level, it required a lot of programming, and smart programming at that. The intelligent use of basic programming skills and data structures was crucial to the success of the project. Understanding the complexity of algorithms and their efficiencies was equally important in tuning certain features to work within the bounds of acceptable timing. Image processing and the transfer of image data required an understanding of the architectual representations of data on the bit-to-bit level. Artificial intelligence was an obviously critical element to the project as well. On the higher-level, the concepts of software engineering became crucial as the software became divided into so many pieces. 
 
-Regardless of the project's success as measured by its ability to complete the tasks intended, the process of development, its rigor, and our ability to navigate through it, we feel, is a clear display of concepts learned at the University of Puget Sound and a reflection of the high ambitions we have developed as a result.
+Regardless of the project's success as measured by its present ability to complete the tasks intended, the process of development, its rigor, and our ability to navigate through it, we feel, is a clear display of concepts learned at the University of Puget Sound and a reflection of the high ambitions we have developed as a result.
 
 \section{Acknowledgements}
 JL and DG would like to thank Prof. Joel Ross for providing mentoring support throughout this project, and the University of Puget Sound for a quality education in Computer Science -- both theoretical and technical.
