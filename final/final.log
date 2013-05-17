@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.4.10)  17 MAY 2013 13:49
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.4.10)  17 MAY 2013 14:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -317,12 +317,14 @@ r
  []
 
 
-Overfull \hbox (3.87799pt too wide) in paragraph at lines 155--156
+Overfull \hbox (3.87799pt too wide) in paragraph at lines 159--160
 []\T1/aer/m/it/9 Portability \T1/aer/m/n/9 -- With the im-ple-men-ta-tion of RE
 ST-ful tech-
  []
 
-[6] (./final.bbl) [7] (./final.aux) ) 
+[6] (./final.bbl [7]) [8
+
+] (./final.aux) ) 
 Here is how much of TeX's memory you used:
  2822 strings out of 494578
  36404 string characters out of 3168574
@@ -331,23 +333,23 @@ Here is how much of TeX's memory you used:
  55400 words of font info for 77 fonts, out of 3000000 for 9000
  314 hyphenation exceptions out of 8191
  42i,10n,26p,1459b,265s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/texlive/2012basic/texmf-dist/f
-onts/enc/dvips/base/8r.enc}</usr/local/texlive/2012basic/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmbx6.pfb></usr/local/texlive/2012basic/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2012basic/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2012basic/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2012basic/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2012basic/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2012basic/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2012basic/tex
-mf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2012basic/texmf
--dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2012basic/texmf-d
-ist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2012basic/texmf-dist/f
-onts/type1/urw/times/utmri8a.pfb>
-Output written on final.pdf (7 pages, 2677837 bytes).
+{/usr/local/texlive/2012basic/texmf-dist/fonts/enc/dvips/base/
+8r.enc}</usr/local/texlive/2012basic/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmbx6.pfb></usr/local/texlive/2012basic/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmbx9.pfb></usr/local/texlive/2012basic/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr6.pfb></usr/local/texlive/2012basic/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr9.pfb></usr/local/texlive/2012basic/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy9.pfb></usr/local/texlive/2012basic/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmti9.pfb></usr/local/texlive/2012basic/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2012basic/texmf-dist/fonts/type1/
+urw/helvetic/uhvb8a.pfb></usr/local/texlive/2012basic/texmf-dist/fonts/type1/ur
+w/helvetic/uhvr8a.pfb></usr/local/texlive/2012basic/texmf-dist/fonts/type1/urw/
+times/utmb8a.pfb></usr/local/texlive/2012basic/texmf-dist/fonts/type1/urw/times
+/utmri8a.pfb>
+Output written on final.pdf (8 pages, 2680601 bytes).
 PDF statistics:
- 155 PDF objects out of 1000 (max. 8388607)
- 103 compressed objects within 2 object streams
+ 158 PDF objects out of 1000 (max. 8388607)
+ 105 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
