@@ -82,7 +82,7 @@ iOS development is build upon the foundation of the Model-View-Controller softwa
 
 \begin{figure*}
 \centering
-\includegraphics[width=0.7\textwidth]{user_workflow.pdf}
+\includegraphics[width=1.0\textwidth]{user_workflow.pdf}
 \caption{General User Interaction with Expresso. The user first connects to the web application. Then, they draw their math and transmit it to the cloud server. The server returns to the client the recognized symbols. At this point, the user has the opportunity to correct any mistakes Barista and Roaster may have made. Finally, the user requests the crunched-out math and \LaTeX{} code. This process is further outlined in Section 3.}
 \label{fig:user_workflow}
 \end{figure*}
@@ -102,7 +102,7 @@ The Xcode project for Expresso comes in at just under five thousand lines of cod
 \begin{figure*}
 \centering
 \includegraphics[width=1.0\textwidth]{final_chart.pdf}
-\caption{Organization of Software Components. The three main components, the client App, Barista, and Roaster are contained within large rectangles and bold text, while databases are represented by cylinders and the transport mechanisms by smaller rectangles. Note that in this figure, Bean is identified as a transport mechanism. It can be considered as such and also as a component of Roaster. }
+\caption{Simplified Organization of Software Components}
 \label{fig:final_chart}
 \end{figure*}
 
@@ -140,18 +140,18 @@ We made many different attempts at developing an easy-to-understand and effectiv
 
 The neural network's default parameters are 100 input nodes (one for each row of data in the symbol's bitmap image), 80 hidden layers (the neurons between the input layer and output layer), and the dimension of output equal to one (only one output ASCII value).
 
-When in training mode, Grinder takes a number of grayscale symbols from Roaster labelled with the appropriate ASCII value and stores them in the supervised data set, and then trains the neural network on the data set until it reaches convergence -- this involves iterating through the labelled training set (each iteration is called an `epoch' and adjusting the weights between neurons until they are an accurate reflection of the set. 
+When in training mode, Grinder takes a number of grayscale symbols from Roaster labelled with the appropriate ASCII value and stores them in the supervised data set, and then trains the neural network on the data set until it reaches convergence -- this involves iterating through the labelled training set (each iteration is called an `epoch') and adjusting the weights between neurons until they are an accurate reflection of the set. 
 
 When Bean submits a request for symbol recognition, Grinder simply activates the neural network with the symbol as an argument, and the network returns the most likely ASCII value that the unknown symbol represents, which is then stored in the Redis database for easy access via Barista and the RESTful API.
 
 
 \section{Evaluation}
-Tackling such a large-scale implementation project part-time proved to be a challenging yet rewarding task. In that, there were aspects of the application which we believe we completed to our standards, and others that we would have liked to improve upon given more time. 
+Tackling such a large-scale implementation project part-time proved to be a challenging yet rewarding task. In that, there were aspects of the application which we believe we completed to our standards, and others that we would have liked to improve upon given more time. In presenting them here, we hope that others may be able to learn and improve upon our course of action.
 
 \subsection{Successes}
 \begin{itemize}
-	\item{\emph{Financial Requirement}} -- With the bootstrapped nature of Expresso, DG and JL were able to develop this system without any sort of monetary investment in libraries or services.
-	\item{\emph{Scalability}} -- By using platforms such as Heroku and Amazon EC2 for hosting and technologies like Redis and the RQ task queue system (Bean), we designed the Expresso system to be able to easily scale up, were it ever to reach a large number of users.
+	\item{\emph{Financial Requirement}} -- With the bootstrapped nature of Expresso, DG and JL were able to develop this system without any sort of monetary investment in libraries or services. This model of prototyping large systems modern open-source and free tools is beneficial, although can cause complications later on in the development process as often they have a lack of documentation and can occasionally be buggy.
+	\item{\emph{Scalability}} -- By using platforms such as Heroku and Amazon EC2 for hosting and technologies like Redis and the RQ task queue system (Bean), we designed the Expresso system to be able to easily scale up to serve more users. However, this would accrue significant cost as 
 	\item{\emph{Portability}} -- With the implementation of RESTful techniques on Barista, it would be a trivial exercise to port the Expresso application from iOS to Android, a web application, or any other sort of device that could interface with the API.
 	\item{\emph{Open Source}} -- Due the use of many different open-source libraries and applications, we are able to release our project under an open-source license on GitHub\footnote{http://github.com/expresso-math/}.
 
@@ -161,7 +161,7 @@ Tackling such a large-scale implementation project part-time proved to be a chal
 \begin{itemize}
 	\item{\emph{Ineffective Symbol Recognition}} -- Despite having tried numerous different open-source symbol recognition systems such as \texttt{Tesseract}\footnote{https://code.google.com/p/tesseract-ocr/}, \texttt{OCRopus}\footnote{https://code.google.com/p/ocropus/}, \texttt{OpenCV}, and \texttt{OCRN}, we were still unable to implement an accurate optical character recognition system due to a lack of knowledge of Machine Learning and poor documentation.
 	\item{\emph{Poor Task Triage}} -- We frequently found ourselves hung up on the fact that our symbol recognition was not functioning properly, and spent many man-hours debugging and trying various different libraries and applications, while it would have been wise of us to instead use some of that time developing the mathematical parsing system which we were unable to complete in the time allotted.
-	\item{\emph{Unfinished Product}} -- Due to all of the reasons listed above, sadly we were unable to complete all of the goals we set out to accomplish.
+
 	
 	\end{itemize}
 
@@ -183,14 +183,10 @@ The image processing involved in preparing an image for recognition is suspect t
 
 The most stark of challenges was certainly symbol recognition, as mentioned above. In addition to our inability to successfully recognize symbols, we found that we simply ran out of time to begin implementation of expression generation. As such, for demonstration purposes, we constructed a ``fake'' engine that spits out the same value for every expression. Not useful in the real world, but as a means to show how the application would work, we were happy with the results.
 
-Clearly, the problem of symbol recognition has yet to be solved on the whole. On a philosophical level, it will never be truly ``solved''. There is no quantifiable way to measure the success of a pattern-matching task, as the variety of inputs and the noise in their data has an immeasurable degree of variance. That being said, our ability to make machines approximate is without end, and as such our approximations will surely become more accurate over time, both in the hands of better software and more powerful machines.
-
-We believe that alternate input methods are critical to the progress of computing. The paradigm of human-computer interaction is shifting constantly, and exploring the possibilities is a path to take in finding the future of computer usage.
-
 \section{Conclusion}
 Expresso was a challenging project to undertake and one that required focused work and the complete education of a computer science major. At the most basic level, it required a lot of programming, and smart programming at that. The intelligent use of basic programming skills and data structures was crucial to the success of the project. Understanding the complexity of algorithms and their efficiencies was equally important in tuning certain features to work within the bounds of acceptable timing. Image processing and the transfer of image data required an understanding of the architectual representations of data on the bit-to-bit level. Artificial intelligence was an obviously critical element to the project as well. On the higher-level, the concepts of software engineering became crucial as the software became divided into so many pieces. 
 
-Regardless of the project's success as measured by its present ability to complete the tasks intended, the process of development, its rigor, and our ability to navigate through it, we feel, is a clear display of concepts learned at the University of Puget Sound and a reflection of the high ambitions we have developed as a result.
+Regardless of the project's success as measured by its ability to complete the tasks intended, the process of development, its rigor, and our ability to navigate through it, we feel, is a clear display of concepts learned at the University of Puget Sound and a reflection of the high ambitions we have developed as a result.
 
 \section{Acknowledgements}
 JL and DG would like to thank Prof. Joel Ross for providing mentoring support throughout this project, and the University of Puget Sound for a quality education in Computer Science -- both theoretical and technical.
