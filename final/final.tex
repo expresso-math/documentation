@@ -117,7 +117,7 @@ Having an API defined convenient, but what about the data itself? \texttt{JSON}\
 So, with all this in mind, we designed and developed a two-piece system for Barista. The front-side was essentially a fa\c{c}ade design pattern. It hooked into Flask-RESTful to implement the methods called when certain \texttt{HTTP} requests were made to the server at certain URL paths. Each of these methods utilized the Barista's back-side, a series of classes to Pythonically encapsulate the data stored in the Redis database for our use. Each class has the ability to detect whether or not it is ``dirty'', that is, whether or not the data the object contains is at the same state as its original data in the Redis database. This allows us to instantiate an object from the Barista module, load data into it, manipulate it, and then put the data back. It's almost a RESTful methodology in and of itself.
 
 \subsection{Server Back-end}
-Three components of Expresso -- Bean, Roaster, and Grinder -- are grouped together because they comprise the so-called ``powerhouse'' of the application as they perform all of the computationally-intensive work: image manipulation and symbol recognition. We decided to host these components separately on an Amazon EC2\footnote{http://aws.amazon.com/ec2/} virtual server T1-micro instance rather than as  additional processes on the Heroku instance which proved to be financially prohibitive, while Amazon EC2 is free for the first year. 
+Three components of Expresso -- Bean, Roaster, and Grinder -- are grouped together because they comprise the so-called ``powerhouse'' of the application as they perform all of the computationally-intensive work: image manipulation and symbol recognition. We decided to host these components separately on an Amazon EC2\footnote{http://aws.amazon.com/ec2/} virtual server T1-micro instance rather than as  additional processes on the Heroku instance which proved to be financially prohibitive; Amazon EC2 is free for the first year. 
 
 \subsubsection{``Bean'' (Task delegation)}
 As there is a lot of work for the back-end to complete, it was in our best interest to
@@ -132,15 +132,19 @@ In essence, Roaster is a set of methods that use the Python Imaging Library (\te
 
 \label{subsection:roaster}
 \subsubsection{``Grinder'' (Symbol recognition)}
-We made many different attempts at developing an easy-to-understand and effective symbol recognition engine (see: \emph{Section 6}). Ultimately, we decided to use \texttt{OCRN}\footnote{https://github.com/swvist/Ocrn/}, a simple open-source handwriting recognition engine by Vipin Nair using functionality from \texttt{PyBrain}\footnote{http://pybrain.org/}, a python machine learning library.
+We made many different attempts at developing an easy-to-understand and effective symbol recognition engine (see: \emph{Section 6}). Ultimately, we decided to use and modify  \texttt{OCRN}\footnote{https://github.com/swvist/Ocrn/}, a simple open-source handwriting recognition engine by Vipin Nair using functionality from \texttt{PyBrain}\footnote{http://pybrain.org/}, a python machine learning library.
 
-We heavily modified \texttt{OCRN} to suit our needs. Essentially, it provides an implementation of a neural network, which is an artificial network which mimics the manner in which neurons communicate and learn information in a brain. Two integral components comprise Grinder: a neural network and a supervised data set for its training. The neural network's default parameters are 100 input nodes (one for each vector in the symbol image), 80 hidden layers, and the dimension of output equal to one (only one output ASCII value).
+\texttt{PyBrain} and \texttt{OCRN} together provide a simple implementation of an artificial neural network (ANN). An ANN can be considered as a weighted digraph of nodes (`neurons') which each have numerous weighted inputs and outputs connected to other neurons in the network. Each neuron has an internal threshold, and if the sum of its inputs is greater than the threshold, then the neuron fires and its output acts as an input for the other neurons to which it is connected. With an entire network comprised of these components and with a labelled dataset, it is possible to teach this simplified model to be able to recognize a character \cite{jain1996artificial}.
 
-When in training mode, Grinder takes a number of grayscale symbols from Roaster labelled with the appropriate ASCII value and stores them in the supervised data set, and then trains the neural network on the data set until it reaches convergence. When Bean submits a request for symbol recognition, Grinder simply activates the neural network with the symbol as an argument, and the network returns the most likely ASCII value that the unknown symbol represents, which is then stored in the Redis database for easy access via Barista and the RESTful API.
+The neural network's default parameters are 100 input nodes (one for each row of data in the symbol's bitmap image), 80 hidden layers (the neurons between the input layer and output layer), and the dimension of output equal to one (only one output ASCII value).
+
+When in training mode, Grinder takes a number of grayscale symbols from Roaster labelled with the appropriate ASCII value and stores them in the supervised data set, and then trains the neural network on the data set until it reaches convergence -- this involves iterating through the labelled training set (each iteration is called an `epoch' and adjusting the weights between neurons until they are an accurate reflection of the set. 
+
+When Bean submits a request for symbol recognition, Grinder simply activates the neural network with the symbol as an argument, and the network returns the most likely ASCII value that the unknown symbol represents, which is then stored in the Redis database for easy access via Barista and the RESTful API.
 
 
 \section{Evaluation}
-Tackling such a large-scale implementation project part-time proved to be a challenging yet rewarding task. In that, there were aspects of the application which we believe we completed to our standards, and others that we would have liked to improve upon given more time.
+Tackling such a large-scale implementation project part-time proved to be a challenging yet rewarding task. In that, there were aspects of the application which we believe we completed to our standards, and others that we would have liked to improve upon given more time. 
 
 \subsection{Successes}
 \begin{itemize}
