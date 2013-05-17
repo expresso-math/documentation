@@ -147,7 +147,7 @@ When Bean submits a request for symbol recognition, Grinder activates the neural
 \subsubsection{Symbol Recognition Shortcomings}
 Despite having tried numerous different open-source symbol recognition systems such as \texttt{Tesseract}\footnote{https://code.google.com/p/tesseract-ocr/}, \texttt{OCRopus}\footnote{https://code.google.com/p/ocropus/}, \texttt{OpenCV}, and \texttt{OCRN}, we were still unable to implement an accurate optical character recognition system due to a lack of knowledge of Machine Learning and poor documentation. Other issues arose from our decision to use Python rather than C/C++ -- community support and APIs for Python tend to be sparse compared to lower-level languages.
 
-In addition, we treated the machine learning libraries as ``black boxes'' of sorts, making the assumption that they would work for our symbol recognition purposes with a small amount of configuration. Writing our own simple machine learning algorithms would have have been wise as we would have had a better understanding of their intricacies and thus better debugging ability.
+In addition, we treated the machine learning libraries as ``black boxes'' of sorts, making the assumption that they would work for our symbol recognition purposes with a small amount of configuration. Writing our own simple machine learning algorithms would have have been wise as we would have had a better understanding of their intricacies and thus better debugging ability, instead of attempting to infer the purpose of every parameter to the construction of a neural network and its trainer.
 
 \section{Evaluation}
 Tackling such a large-scale implementation project part-time proved to be a challenging yet rewarding task. In that, there were aspects of the application which we believe we completed to our standards, and others that we would have liked to improve upon given more time. In presenting them here, we hope that others may be able to learn from and improve upon our course of action.
@@ -198,7 +198,6 @@ Regardless of the project's success as measured by its present ability to comple
 
 \section{Acknowledgements}
 JL and DG would like to thank Prof. Joel Ross for providing mentoring support throughout this project, and the University of Puget Sound for a quality education in Computer Science -- both theoretical and technical.
-
 %\end{document}  % This is where a 'short' article might terminate
 
 \bibliographystyle{abbrv}
