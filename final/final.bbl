@@ -1,8 +1,9 @@
 \begin{thebibliography}{1}
 
-\bibitem{elkstein_rest_2008}
-M.~Elkstein.
-\newblock {Learn REST: A Tutorial: 1. What is REST?}, 2008.
+\bibitem{Fielding:2002:PDM:514183.514185}
+R.~T. Fielding and R.~N. Taylor.
+\newblock Principled design of the modern web architecture.
+\newblock {\em ACM Trans. Internet Technol.}, 2(2):115--150, May 2002.
 
 \bibitem{levin_cellwriter:_2007}
 M.~Levin.
