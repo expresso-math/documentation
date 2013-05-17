@@ -1,9 +1,21 @@
 \begin{thebibliography}{1}
 
+\bibitem{chan_mathematical_2000}
+K.-F. Chan and D.-Y. Yeung.
+\newblock Mathematical expression recognition: A survey.
+\newblock Technical report, Department of Computer Science, The Hong Kong
+  University of Science and Technology, Clear Water Bay, Kowloon, Hong Kong,
+  2000.
+
 \bibitem{Fielding:2002:PDM:514183.514185}
 R.~T. Fielding and R.~N. Taylor.
 \newblock Principled design of the modern web architecture.
 \newblock {\em ACM Trans. Internet Technol.}, 2(2):115--150, May 2002.
+
+\bibitem{jain1996artificial}
+A.~K. Jain, J.~Mao, and K.~M. Mohiuddin.
+\newblock {Artificial neural networks: A tutorial}.
+\newblock {\em Computer}, 29(3):31--44, 1996.
 
 \bibitem{levin_cellwriter:_2007}
 M.~Levin.
