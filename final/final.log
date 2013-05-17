@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.4.10)  17 MAY 2013 14:24
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.4.10)  17 MAY 2013 14:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -280,10 +280,7 @@ File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 ) [1{/usr/local/texlive/2012basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
-]
-Underfull \vbox (badness 2698) has occurred while \output is active []
-
- [2]
+] [2]
 <user_workflow.pdf, id=16, 630.355pt x 525.965pt>
 File: user_workflow.pdf Graphic file (type pdf)
  <use user_workflow.pdf>
@@ -346,7 +343,7 @@ urw/helvetic/uhvb8a.pfb></usr/local/texlive/2012basic/texmf-dist/fonts/type1/ur
 w/helvetic/uhvr8a.pfb></usr/local/texlive/2012basic/texmf-dist/fonts/type1/urw/
 times/utmb8a.pfb></usr/local/texlive/2012basic/texmf-dist/fonts/type1/urw/times
 /utmri8a.pfb>
-Output written on final.pdf (8 pages, 2680697 bytes).
+Output written on final.pdf (8 pages, 2680784 bytes).
 PDF statistics:
  158 PDF objects out of 1000 (max. 8388607)
  105 compressed objects within 2 object streams
